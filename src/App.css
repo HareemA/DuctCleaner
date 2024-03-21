@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 3px 3px gray;
+  height: 70px;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar--left {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(30, 30, 139);
+  font-size: 23px;
+  
+}
+
+.navbar--mid {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.navbar--mid > h6 {
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(30, 30, 139);
+  font-weight:431;
+}
+
+.navbar--mid > h6:hover{
+  color: #FED03D
+  
+}
+
+.book {
+  background-color: #FED03D;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  height: 60px;
+  width: 110px;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(30, 30, 139);
+  margin-right: 20px;
+  width: 120px;
+  justify-content: center;
+}
+
+.book:hover {
+  background-color:  rgb(30, 30, 139);
+  color: #FED03D;
+}
+
+.headerImg {
+  margin-top: 70px;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.headertext {
+  position: absolute;
+  top: 170px;
+}
+.headertext1 {
+  position: absolute;
+  top: 170px;
+  color: white;
+  font-size: 95px;
+  font-family: "Montserrat", sans-serif;
+  left: 60px;
+  font-weight: 500;
+
+}
+
+.headertext2 {
+  position: absolute;
+  top: 290px;
+  color: #FED03D;
+  font-size: 56px;
+  font-family: "Montserrat", sans-serif;
+  left: 80px;
+  font-weight: 431;
+
+}
+
+.card-main {
+  background-color: rgb(236, 236, 236);
+  margin-top: -52px;
+  padding-top: 35px;
+}
+
+.card {
+  margin: 30px;
+  width: 600px;
+  height: 200px;
+  /* justify-content: center;
+  align-items: center; */
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  /* box-shadow: 6px 6px 6px 6px gray; */
+  /* text-align: center; */
+  /* color: white; */
+  position: relative;
+  
+}
+
+.card::after {
+  content: ''; /* Required for the pseudo-element */
+  position: absolute;
+  bottom: 0; /* Position the border at the bottom */
+  left: 0;
+  width: 100%; /* Make the border span the entire width of the card */
+  height: 1px; /* Set the height of the border */
+  background-color: rgb(197, 193, 193) /* Color of the border */
+}
+
+.card > h2 {
+  font-size: 24px;
+  color: #207AE8;
+  font-weight: 400;
+}
+
+.card > p {
+  margin-top: -10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-conatiner {
+  display: flex;
+   /* Gap between cards */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.card-main-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color:  #0C72C3;
+  font-weight: 400;
+}
+
