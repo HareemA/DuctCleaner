@@ -1,6 +1,7 @@
 import data from "../Data/services.json";
 import React from 'react';
-
+import cleaner from '../Images/vacuum (2).png';
+import ServicesData from "../Data/Services";
 export default function Services() {
   return (
     <section className="services--section" id="ourServices">
@@ -9,7 +10,7 @@ export default function Services() {
         <h2 className="services--section--heading">OUR SERVICES</h2>
       </div>
       <div className="services--section--container">
-        {data?.services?.map((item, index) => (
+        {ServicesData.map((item, index) => (
           <div key={index} className="services--section--card">
             <div className="services--section--img">
               <img src={item.src} alt="Product Chain" />
