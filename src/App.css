@@ -1,3 +1,4 @@
+/* GLOBAL CSS */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -15,7 +16,7 @@ p {
   margin: 0;
 }
 :root {
-  --primary: #5e3bee;
+  --primary: #0C72C3;
   --heading-color: #282938;
   --bg-shade: #f5fcff;
   --github: #e62872;
@@ -23,6 +24,8 @@ p {
   --black: #000000;
   --white: #ffffff;
 }
+
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -194,6 +197,24 @@ p {
   height: 30px;
 }
 
+/* SERVICES SECTION */
+.portfolio--section {
+  display: flex;
+  padding: 112px 85px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.section--title {
+  color: var(--heading-color);
+  font-size: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-start;
+}
 .services--section {
   display: flex;
   padding: 149.33px 85.33px;
@@ -213,12 +234,13 @@ p {
   display: grid;
   justify-content: center;
   align-items: flex-start;
-  gap: 42.6px;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 52.6px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .services--section--card {
   display: flex;
   padding: 32px;
+  margin-bottom: 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
@@ -230,7 +252,7 @@ p {
 .services--section--card:hover {
   border-bottom: 4px solid var(--primary);
 }
-.services--section--card:hover .sservices--section--description {
+.services--section--card:hover .services--section--description {
   color: var(--darkblue);
 }
 .services--section--img {
@@ -247,19 +269,19 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 26px;
   align-self: stretch;
 }
 .services--section--title {
   color: var(--heading-color);
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 40px;
 }
 .services--section--description {
   color: var(--black);
-  font-size: 21.3px;
+  font-size: 18.3px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 26px;
 }

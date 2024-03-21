@@ -8,7 +8,7 @@ export default function Services() {
         <p className="section--title">GTA Duct Cleaning Services</p>
         <h2 className="services--section--heading">OUR SERVICES</h2>
       </div>
-      <div className="sservices--section--container">
+      <div className="services--section--container">
         {data?.services?.map((item, index) => (
           <div key={index} className="services--section--card">
             <div className="services--section--img">
