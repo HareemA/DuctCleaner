@@ -2,11 +2,7 @@ import React from "react";
 import duct from '../Images/duct.jpg'
 
 export default function Header() {
-    const headertext1 = document.querySelector('.headertext1');
-    const headertext2 = document.querySelector('.headertext2');
-
-    const headertext1Position = headertext1.offsetHeight;
-    headertext2.style.top = `calc(${headertext1Position}px + 70px)`;
+    
 
     return (
         <div>
