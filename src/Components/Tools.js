@@ -6,13 +6,20 @@ export default function Tools() {
     const Tools = ToolsData.map (
         data => (
             <ToolsCards id={data.id}
-            heading={data.heading}
-            img={data.img}/>
+            img={data.img}
+            heading={data.heading} />
+            
         )
     )
     return (
-        <div className='Tools-main'>
-            {Tools}
+        <div> 
+            <div>
+                <h1 className='Tools--heading'>Our Tools</h1>
+            </div>
+            <div className='Tools-main'>
+                {Tools}
+            </div>
         </div>
+        
     )
 }
