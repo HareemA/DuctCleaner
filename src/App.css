@@ -57,9 +57,19 @@ p {
   font-weight:431;
 }
 
+
 .navbar--mid > h6:hover{
-  color: #FED03D
+  color: #FED03D;
   
+}
+
+.link-nav {
+  text-decoration: none;
+}
+
+.link-nav:hover {
+  color: #FED03D;
+  text-decoration: none;
 }
 
 .book {
@@ -86,16 +96,18 @@ p {
   width: 100%;
   height: 600px;
   position: relative;
+  opacity: 40%;
 }
 
 .headertext {
   position: absolute;
   top: 170px;
 }
+
 .headertext1 {
   position: absolute;
-  top: 170px;
-  color: white;
+  top: 230px;
+  color: #0C72C3;
   font-size: 95px;
   font-family: "Montserrat", sans-serif;
   left: 60px;
@@ -105,7 +117,7 @@ p {
 
 .headertext2 {
   position: absolute;
-  top: 290px;
+  top: 340px;
   color: #FED03D;
   font-size: 56px;
   font-family: "Montserrat", sans-serif;
@@ -329,23 +341,64 @@ p {
 
 .Footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 300px;
   background-color: #FED03D;
   margin-top: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 200px 0 200px;
   font-family: "Montserrat", sans-serif;
+  color: rgb(223, 202, 13);
+  background-color: #0C72C3;;
 }
 
 .Footer > div >ul {
   list-style-type: none;
-  background-color: red;
-  justify-content: flex-end;
+  padding-left: 0;
+  margin-left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Footer > div >ul li{
+  margin-bottom: 5px;
+}
+
+.Footer > div >h2 {
+  padding-top: 50px;
+}
+
+.ReachUs {
+  margin-top: 18px;
+
+}
+
+.mail-div {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
   
 }
 
-.Footer-Item {
+.mail-div >h6 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
   
+}
+
+.mail {
+  width: 30px;
+  height: 30px;
+}
+
+.servicesImg {
+  margin-top: 70px;
+  height: 330px;
+  width: 100%;
 }
