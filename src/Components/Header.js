@@ -1,5 +1,6 @@
 import React from "react";
-import duct from '../Images/duct.jpg'
+// import duct from '../Images/duct.jpg'
+import duct from '../Images/3d-rendering-ventilation-system.jpg';
 
 export default function Header() {
     

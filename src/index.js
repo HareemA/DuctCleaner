@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import BookPage from './Components/BookNow/BookPage';
 import ServicesPage from './Components/Services/ServicesPage';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/Services",
     element: <ServicesPage/>,
+  },
+  {
+    path: "/Book",
+    element: <BookPage/>,
   },
 ]);
 
