@@ -785,6 +785,25 @@ input[type="checkbox"] {
 }
 /* Contact End */
 
+/* animations */
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation1 {
+  opacity: 0; /* Ensure the text starts invisible */
+  animation: textReveal 2s ease forwards; /* Use the forwards option to maintain the final state */
+  overflow: hidden; /* Ensures that overflowing content is not visible during the animation */
+}
+
 
 /* For Smaller Screens */
 /* @media only screen and (max-width: 1260px) {
