@@ -288,6 +288,8 @@ p {
   align-items: flex-start;
   gap: 52.6px;
   grid-template-columns: repeat(3, 1fr);
+  margin-right: 50px;
+  margin-left: 50px;
 }
 .services--section--card {
   display: flex;
