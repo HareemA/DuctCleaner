@@ -1,20 +1,57 @@
+import React, { useEffect, useState, useRef } from 'react';
 import TestimonialsData from "../Data/TestimonialsData";
 
+function useOnScreen(refs, rootMargin = "0px") {
+  const [isIntersecting, setIntersecting] = useState(Array(refs.length).fill(false));
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          const index = refs.findIndex(ref => ref.current === entry.target);
+          if (index !== -1) {
+            setIntersecting(prev => [...prev.slice(0, index), entry.isIntersecting, ...prev.slice(index + 1)]);
+          }
+        });
+      },
+      { rootMargin }
+    );
+
+    refs.forEach(ref => {
+      if (ref.current) observer.observe(ref.current);
+    });
+
+    return () => {
+      refs.forEach(ref => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
+    };
+  }, [refs, rootMargin]); 
+
+  return isIntersecting;
+}
+
 export default function Testimonials() {
+  const headingRef = useRef(null);
+  const isVisibleHeading = useOnScreen([headingRef]);
+  const cardRefs = useRef(TestimonialsData.map(() => React.createRef()));
+  const isVisibleCards = useOnScreen(cardRefs.current);
+
   return (
     <section className="testimonial--section" id="testimonial">
-      
-        <div className="portfolio--container">
-          <p className="section--title">Clients Feedback</p>
-          <h2 className="services--section--heading">Customer Feedback</h2>
-        </div>
-      
+      <div className="portfolio--container">
+        <p className="section--title">Clients Feedback</p>
+        <h2 ref={headingRef} className={`services--section--heading ${isVisibleHeading[0] ? 'animation1' : ''}`}>
+          Customer Feedback
+        </h2>
+      </div>
       <div className="portfolio--section--container">
         {TestimonialsData.map((item, index) => (
-          <div key={index} className="testimonial--section--card">
+          <div key={index} className={`testimonial--section--card ${isVisibleCards[index] ? 'animation1' : ''}`} ref={cardRefs.current[index]}>
             <div className="testimonial--section--card--review">
               {Array.from({ length: 5 }, (reviews, index) => (
                 <svg
+                  key={index}
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
                   height="26"
@@ -28,7 +65,7 @@ export default function Testimonials() {
                 </svg>
               ))}
             </div>
-            <p className="text-md">{item.description}</p>
+            <p className={`text-md ${isVisibleCards[index] ? 'animation1' : ''}`}>{item.description}</p>
             <div className="testimonial--section--card--author--detail">
               <img src={item.src} alt="Avatar" />
               <div>

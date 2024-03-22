@@ -790,7 +790,7 @@ input[type="checkbox"] {
 @keyframes textReveal {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -800,7 +800,7 @@ input[type="checkbox"] {
 
 .animation1 {
   opacity: 0; /* Ensure the text starts invisible */
-  animation: textReveal 2s ease forwards; /* Use the forwards option to maintain the final state */
+  animation: textReveal 1s ease forwards; /* Use the forwards option to maintain the final state */
   overflow: hidden; /* Ensures that overflowing content is not visible during the animation */
 }
 
@@ -809,7 +809,7 @@ input[type="checkbox"] {
 @keyframes textReveal {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;

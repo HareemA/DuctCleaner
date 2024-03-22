@@ -57,7 +57,7 @@ export default function Services() {
             </div>
             <div className="services--section--card--content">
               <h3 className={`services--section--title ${isVisibleList[index] ? 'animation1' : ''}`}>{item.title}</h3>
-              <p className="services--section--description">{item.description}</p>
+              <p className={`services--section--description ${isVisibleList[index] ? 'animation1' : ''}`}>{item.description}</p>
             </div>
           </div>
         ))}
