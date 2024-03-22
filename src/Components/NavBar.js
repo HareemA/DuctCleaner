@@ -14,7 +14,7 @@ export default function NavBar() {
                 <h6>ABOUT</h6>
                 <h6><Link to='/Contact' className="link-nav section--heading">CONTACT</Link></h6>
                 <h6> <Link to='/Services' className="link-nav">SERVICES</Link></h6>
-                <h6>PRICING</h6>
+                <h6> <Link to='/Price' className="link-nav">PRICING</Link></h6>
             </div>
             <div className="book-div">
                 <Link to='/Book' className="book">BOOK NOW</Link>
