@@ -35,16 +35,58 @@ export default function BookCard() {
                 </div>
 
                 <div className="names">
-                    <div>
+                    <div className="names-inner">
                         <h2>First Name</h2>
                         <input type="text"/>
                     </div>
 
-                    <div>
+                    <div className="names-inner">
                         <h2>Last Name</h2>
                         <input type="text"/>
                     </div>
                 </div>
+
+                <div className="names">
+                    <div className="names-inner">
+                        <h2>Email</h2>
+                        <input type="text"/>
+                    </div>
+
+                    <div className="names-inner">
+                        <h2>Phone</h2>
+                        <input type="text"/>
+                    </div>
+                </div>
+
+                <div className="names">
+                    <div className="names-inner">
+                        <h2>Address</h2>
+                        <input type="text"/>
+                    </div>
+
+                    <div className="names-inner">
+                        <h2>City</h2>
+                        <input type="text"/>
+                    </div>
+                </div>
+
+                <div className="names">
+                    <div className="names-inner">
+                        <h2>Postal Code</h2>
+                        <input type="text"/>
+                    </div>
+
+                    <div className="names-inner">
+                        <h2>Type</h2>
+                        <select>
+                            <option value="Choose">Choose Option</option>
+                            <option value="Commercial">Commertial</option>
+                            <option value="Residential">Residential</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button className="submit-button">Submit</button>
             </form>
         </div>
     )

@@ -5,7 +5,7 @@ export default function ServicesHeader() {
     return(
         <div> 
             <img src={service} className="servicesImg"/>
-            <h1 className="services-heading">Our Services</h1>
+            <h1 className="servives-heading">Our Services</h1>
         </div>
     )
 }
