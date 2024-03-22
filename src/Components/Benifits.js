@@ -12,7 +12,7 @@ export default function Benifits() {
     return (
         <div className="card-main">
             <div>
-                <h1 className="card-main-heading">Benifits of Duct Cleaning</h1>
+                <h1 className="card-main-heading">Benefits of Duct Cleaning</h1>
             </div>
             <div className="card-conatiner">
             {cardData}
