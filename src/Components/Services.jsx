@@ -1,4 +1,3 @@
-import data from "../Data/services.json";
 import React from 'react';
 import cleaner from '../Images/vacuum (2).png';
 import ServicesData from "../Data/Services";
