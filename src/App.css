@@ -64,21 +64,7 @@ p {
   color: var(--primary);
   background-color: var(--white);
 }
-.btn-github {
-  color: var(--white);
-  background-color: var(--github);
-  border: var(--github);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
-  gap: 16px;
-}
-.btn-github:hover {
-  color: var(--github);
-  background-color: var(--white);
-}
+
 
 /* NAVBAR */
 .navbar {
@@ -370,13 +356,13 @@ p {
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
-  /* border-radius: 10.6px; */
+  border-radius: 10.6px;
   background: #f5fcff;
   min-height: 250px;
 }
-/* .services--section--card:hover {
-  border-bottom: 4px solid var(--primary);
-} */
+.services--section--card:hover {
+  box-shadow: 0 0 6px 6px #EEEEEE;
+}
 .services--section--card:hover .services--section--description {
   color: var(--darkblue);
 }
