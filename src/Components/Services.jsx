@@ -1,4 +1,3 @@
-import data from "../Data/services.json";
 import React from 'react';
 import ServicesData from "../Data/ServicesData";
 

@@ -5,6 +5,7 @@ import Benifits from './Components/Benifits';
 import Services from './Components/Services';
 import Tools from './Components/Tools';
 import Footer from './Components/Footer';
+import Testimonials from './Components/Testimonials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Benifits/>
       <Services/>
       <Tools/>
+      <Testimonials/>
       <Footer/>
     </div>
   );
