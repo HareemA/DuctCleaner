@@ -1,7 +1,9 @@
 import data from "../Data/services.json";
 import React from 'react';
-import cleaner from '../Images/vacuum (2).png';
-import ServicesData from "../Data/Services";
+import ServicesData from "../Data/ServicesData";
+
+
+
 export default function Services() {
   return (
     <section className="services--section" id="ourServices">
