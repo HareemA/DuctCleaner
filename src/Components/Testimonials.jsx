@@ -3,12 +3,12 @@ import TestimonialsData from "../Data/TestimonialsData";
 export default function Testimonials() {
   return (
     <section className="testimonial--section" id="testimonial">
-      <div className="portfolio--container-box">
+      
         <div className="portfolio--container">
           <p className="section--title">Clients Feedback</p>
           <h2 className="services--section--heading">Customer Feedback</h2>
         </div>
-      </div>
+      
       <div className="portfolio--section--container">
         {TestimonialsData.map((item, index) => (
           <div key={index} className="testimonial--section--card">

@@ -249,19 +249,13 @@ p {
   gap: 80px;
 }
 .section--title {
-  /* color: var(--heading-color);
-  font-size: 21px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  display: flex;
-  align-items: flex-start; */
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-align: center;
   color:  #0C72C3;
   font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
 }
 .services--section {
   display: flex;
@@ -273,15 +267,12 @@ p {
 }
 
 .services--section--heading {
-  /* color: var(--heading-color);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 77px; */
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
-  text-align: center;
   color:  #0C72C3;
   font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .services--section--heading--link {
@@ -408,16 +399,8 @@ p {
   height: 30px;
 }
 
-/* Services Page */
-.servicesImg {
-  margin-top: 70px;
-  height: 530px;
-  width: 100%;
-}
-
-<<<<<<< HEAD
 /* Testimonial */
-portfolio--section {
+.portfolio--section {
   display: flex;
   padding: 112px 85px;
   flex-direction: column;
@@ -433,8 +416,10 @@ portfolio--section {
 .portfolio--container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 21.3px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio--section--container {
   display: flex;
@@ -447,7 +432,8 @@ portfolio--section {
   color: var(--heading-color);
   font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
+  /* line-height: 24px; */
+  text-align: center;
 }
 .testimonial--section {
   display: flex;
@@ -456,10 +442,11 @@ portfolio--section {
   align-items: flex-start;
   gap: 80px;
   background-color: var(--bg-shade);
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .sections--heading {
   color: var(--primary);
+  
 }
 .testimonial--section--card {
   display: flex;
@@ -492,7 +479,13 @@ portfolio--section {
   line-height: 150%;
 }
 /* Testimonial Ends */
-=======
+
+/* Services Page */
+.servicesImg {
+  margin-top: 70px;
+  height: 530px;
+  width: 100%;
+}
 .servives-heading {
   color: #0C72C3;
   font-size: 95px;
@@ -566,4 +559,42 @@ portfolio--section {
   font-weight: 300px;
   font-family: "Montserrat", sans-serif;
 }
->>>>>>> 016775b748e29d2c50618b9a43295e3cc7e9064b
+
+.book-card {
+  margin-top: 30px;
+  width: 800px;
+  height: auto;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  border:1px dotted #0C72C3 ;
+  margin-bottom: 30px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.services-checkbox >p {
+  display: flex;
+  padding-top: 10px;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+}
+
+.services-checkbox >div {
+  display: flex;
+  padding-top: 10px;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
