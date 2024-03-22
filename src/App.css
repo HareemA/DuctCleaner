@@ -83,6 +83,7 @@ p {
   margin-right: 20px;
   width: 120px;
   justify-content: center;
+  text-decoration: none;
 }
 
 .book:hover {
@@ -282,6 +283,15 @@ p {
   color:  #0C72C3;
   font-weight: 400;
 }
+
+.services--section--heading--link {
+  color:  #0C72C3;
+  text-decoration: none;
+}
+
+.services--section--heading--link:hover {
+  opacity: 70%;;
+}
 .services--section--container {
   display: grid;
   justify-content: center;
@@ -299,13 +309,13 @@ p {
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
-  border-radius: 10.6px;
-  background: var(--bg-shade);
+  /* border-radius: 10.6px; */
+  background: rgb(250, 250, 247);
   min-height: 250px;
 }
-.services--section--card:hover {
+/* .services--section--card:hover {
   border-bottom: 4px solid var(--primary);
-}
+} */
 .services--section--card:hover .services--section--description {
   color: var(--darkblue);
 }
@@ -315,7 +325,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 13.3px;
-  border-radius: 10.6px;
+  /* border-radius: 10.6px; */
   background: #fff;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
@@ -327,7 +337,7 @@ p {
   align-self: stretch;
 }
 .services--section--title {
-  color: var(--heading-color);
+  color: #0C72C3;
   font-size: 26px;
   font-weight: 700;
   line-height: 40px;
@@ -456,5 +466,25 @@ p {
 .service-card-heading {
   color: #0C72C3;
   font-size: 27px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Booking Page */
+.book-header-image {
+  margin-top: 70px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.book-header-heading {
+  position: absolute;
+  top: 32%;
+  text-align: center;
+  display: flex;
+  left: 40%;
+  color: #0C72C3;
+  font-size: 60px;
+  font-weight: 300px;
   font-family: "Montserrat", sans-serif;
 }

@@ -15,7 +15,7 @@ export default function NavBar() {
                 <h6>PRICING</h6>
             </div>
             <div className="book-div">
-                <h6 className="book">BOOK NOW</h6>
+                <Link to='/Book' className="book">BOOK NOW</Link>
             </div>
         </div>
     )

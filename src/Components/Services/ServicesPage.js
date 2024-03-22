@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from '../NavBar';
 import ServicesHeader from "./ServicesHeader";
 import ServiceCard from "./ServicesCard";
+import Footer from '../../Components/Footer';
 
 export default function ServicesPage() {
     return(
@@ -9,6 +10,7 @@ export default function ServicesPage() {
             <NavBar/>
             <ServicesHeader/>
             <ServiceCard/>
+            <Footer/>
         </div>
     )
 }
