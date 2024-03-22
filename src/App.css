@@ -577,7 +577,7 @@ p {
 .services-img {
   width: 400px;
   height: 400px;
-  margin-top: 90px;
+  
 }
 
 .services-card > div{
@@ -804,6 +804,130 @@ input[type="checkbox"] {
   overflow: hidden; /* Ensures that overflowing content is not visible during the animation */
 }
 
+/* animations */
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation1 {
+  opacity: 0; /* Ensure the text starts invisible */
+  animation: textReveal 2s ease forwards; /* Use the forwards option to maintain the final state */
+  overflow: hidden; /* Ensures that overflowing content is not visible during the animation */
+}
+
+/* Pricing Page*/
+.price-data-main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.price-data-1 {
+  width: 1000px;
+  height: auto;
+  padding: 40px 0 40px 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-left: 17px;
+  box-shadow: 0 2px 2px 4px #cfdbe6;
+  padding-right: 17px;
+  background-color: #0C72C3;
+}
+
+.price-data-1 >p {
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.price-data-2 {
+  width: 800px;
+  height: auto;
+  padding: 40px 0 40px 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-left: 17px;
+  box-shadow: 0 2px 2px 4px #cfdbe6;
+  padding-right: 17px;
+  background-color: #025ca5;
+}
+
+.price-data-2 >p {
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.names-quote {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.names-quote >input{
+  width: 790px;
+  height: 30px;
+}
+
+.names-quote > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.names-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.names-q-inner {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.names-q-inner >input{
+  width: 360px;
+  height: 30px;
+}
+
+.names-q-inner > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.names-q-inner >textarea{
+  height: 150px;
+}
+
+.quote-heading {
+  margin-top: 70px;
+  color:#0C72C3;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  left: 60px;
+  font-weight: 500;
+  text-align: center;
+}
 
 /* For Smaller Screens */
 /* @media only screen and (max-width: 1260px) {
