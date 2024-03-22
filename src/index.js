@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import BookPage from './Components/BookNow/BookPage';
 import ServicesPage from './Components/Services/ServicesPage';
+import ContactPage from './Components/Contact/ContactPage';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/Book",
     element: <BookPage/>,
+  },
+  {
+    path: "/Contact",
+    element: <ContactPage/>,
   },
 ]);
 
