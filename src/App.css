@@ -346,6 +346,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   margin-right: 50px;
   margin-left: 50px;
+  
 }
 .services--section--card {
   display: flex;
@@ -356,7 +357,7 @@ p {
   gap: 32px;
   flex: 1 0 0;
   /* border-radius: 10.6px; */
-  background: rgb(250, 250, 247);
+  background: #f5fcff;
   min-height: 250px;
 }
 /* .services--section--card:hover {
