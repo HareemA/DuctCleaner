@@ -35,6 +35,7 @@ const router = createHashRouter([
     path: "/Price",
     element: <PricePage/>,
   },
+  
 ]);
 
 

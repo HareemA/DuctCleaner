@@ -37,7 +37,7 @@ p {
   justify-content: space-between;
   box-shadow: 0 0 3px 3px gray;
   height: 90px;
-  /* position: absolute; */
+  /* position:absolute; */
   width: 100%;
 }
 
@@ -402,6 +402,7 @@ p {
 .footer--container {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0px;
 }
 
 .footer {
@@ -887,7 +888,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  h1 {
+  .contact--banner--heading {
       text-align: center;
       text-transform: uppercase;
       color: #F1FAEE; 
