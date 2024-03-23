@@ -396,44 +396,73 @@ p {
 }
 
 /* FOOTER */
-.Footer {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.footer--container {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #052a49;
+}
+
+.footer .footer-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 300px;
-  margin-top: 0px;
-  padding: 0 200px 0 200px;
-  font-family: "Montserrat", sans-serif;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
   color: #dda900;
-  background-color: #052a49;
+  font-size: 1.4rem;
+  font-weight: 990;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #dda900;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 30px 0;
+  color: #fffffd;
+  max-width: 300px;
+  font-weight: 700;
+
 }
 
-.Footer > div >ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  gap: 10px;
-  margin-bottom: 10px;
+.footer-col .icons {
+  display: flex;
+  margin-top: 40px;
+  gap: 30px;
+  cursor: pointer;
 }
-
-.Footer > div >ul li{
-  margin-bottom: 5px;
+.footer-col .icons .ic {
+  color: #dda900;
+  height: 2.1rem;
 }
-
-.Footer > div >h2 {
-  padding-top: 50px;
-}
-
-
-.ReachUs {
-  margin-top: 18px;
-
+.footer-col .icons .ic :hover  {
+  color: #fff;
 }
 
 .mail-div {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   margin-top: 10px;
   
 }
@@ -444,15 +473,43 @@ p {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 1.2rem;
+  color: #d5aa1a;
+  font-weight: 550;
+  margin-bottom: 25px;
   
 }
 
 .mail {
   width: 30px;
   height: 30px;
+  color: #d5aa1a;
 }
+
+
+@media (max-width: 768px) {
+
+  .footer-row .footer-col h4 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .footer-col .links li a {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .mail-div >h6 {
+    font-size: 1rem;
+  }
+ 
+  .footer .footer-row {
+    padding: 50px;
+    gap: 1rem;
+  }
+}
+
+
+
 
 /* Services Page */
 .servicesImg {
