@@ -39,7 +39,7 @@ export default function ContactForm() {
               />
             </label>
             <label htmlFor="phone-number" className="contact--label">
-              <span className="text-md">phone-number</span>
+              <span className="text-md">Phone Number</span>
               <input
                 type="number"
                 className="contact--input text-md"
@@ -50,7 +50,7 @@ export default function ContactForm() {
             </label>
           </div>
           <label htmlFor="choode-topic" className="contact--label">
-            <span className="text-md">Choose a topic</span>
+            <span className="text-md">Choose a Topic</span>
             <select id="choose-topic" className="contact--input text-md">
               <option>Select One...</option>
               <option>Dict Inspection</option>
@@ -59,6 +59,7 @@ export default function ContactForm() {
               <option>Maintence</option>
               <option>Indoor Air Quality Testing</option>
               <option>Furnace and Air Handler Cleaning</option>
+              <option>Other</option>
             </select>
           </label>
           <label htmlFor="message" className="contact--label">

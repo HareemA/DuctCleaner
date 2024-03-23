@@ -417,6 +417,7 @@ p {
   gap: 3.5rem;
   padding: 60px;
 }
+
 .footer-row .footer-col h4 {
   color: #dda900;
   font-size: 1.4rem;
@@ -424,10 +425,12 @@ p {
 }
 .footer-col .links {
   margin-top: 20px;
+  margin-left: -30px;
 }
 .footer-col .links li {
   list-style: none;
   margin-bottom: 15px;
+  
 }
 .footer-col .links li a {
   text-decoration: none;
@@ -989,6 +992,7 @@ p {
   gap: 10.6px;
   flex: 1 0 0;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 .contact--input {
   display: flex;
@@ -1441,6 +1445,14 @@ input[type="checkbox"] {
   }
   .contact--form--container {
     width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 503px) {
+  
+  .container {
+    grid-template-columns: repeat(1, auto);
   }
   
 }
