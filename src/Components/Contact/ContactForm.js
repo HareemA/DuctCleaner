@@ -70,7 +70,7 @@ export default function ContactForm() {
               placeholder="Type your message..."
             />
           </label>
-          <label htmlFor="checkboc" className="checkbox--label">
+          <label htmlFor="checkbox" className="checkbox--label">
             <input type="checkbox" required name="checkbox" id="checkbox" />
             <span className="text-sm">I accept the terms</span>
           </label>
