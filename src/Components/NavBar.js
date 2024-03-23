@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../Images/Logo (2).png';
+import logo from '../Images/Logo-final.png'
 import close from '../Images/close.png';
 import menu from '../Images/menu.png';
 
@@ -41,7 +41,6 @@ export default function NavBar() {
                         {isClicked &&
                             <div className="dropdown-content">
                                 <Link to='/' className="link-nav">HOME</Link>
-                                <Link to='/About' className="link-nav">ABOUT</Link>
                                 <Link to='/Contact' className="link-nav section--heading">CONTACT</Link>
                                 <Link to='/Services' className="link-nav">SERVICES</Link>
                                 <Link to='/Price' className="link-nav">PRICING</Link>
@@ -53,7 +52,6 @@ export default function NavBar() {
                 ) : (
                     <>
                         <h6><Link to='/' className="link-nav">HOME</Link></h6>
-                        <h6><Link to='/About' className="link-nav">ABOUT</Link></h6>
                         <h6><Link to='/Contact' className="link-nav section--heading">CONTACT</Link></h6>
                         <h6><Link to='/Services' className="link-nav">SERVICES</Link></h6>
                         <h6><Link to='/Price' className="link-nav">PRICING</Link></h6>
