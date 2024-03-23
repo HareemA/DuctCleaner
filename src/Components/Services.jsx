@@ -44,7 +44,7 @@ export default function Services() {
   return (
     <section className="services--section" id="ourServices">
       <div className="portfolio--container">
-        <p ref={titleRef} className={`section--title ${isVisibleTitle[0] ? 'animation1' : ''}`}>GTA Duct Cleaning Services</p>
+        <p ref={titleRef} className="section--title">GTA Duct Cleaning Services</p>
         <h2 ref={headingRef} className={`services--section--heading ${isVisibleHeading[0] ? 'animation1' : ''}`}>
           <Link to='/Services' className="services--section--heading--link">OUR SERVICES</Link>
         </h2>

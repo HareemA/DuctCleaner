@@ -1,4 +1,7 @@
 /* GLOBAL CSS */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -24,46 +27,7 @@ p {
   --black: #000000;
   --white: #ffffff;
 }
-.btn {
-  font-family: "Roboto";
-  display: inline-block;
-  padding: 14px 32px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -ms-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-}
-.btn-outline-primary {
-  color: var(--primary);
-  background-color: var(--white);
-  border: 1px solid var(--primary);
-}
-.btn-outline-primary:hover {
-  color: var(--white);
-  background-color: var(--primary);
-}
-.btn-primary {
-  color: var(--white);
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
-}
-.btn-primary:hover {
-  color: var(--primary);
-  background-color: var(--white);
-}
+
 
 
 /* NAVBAR */
@@ -317,7 +281,7 @@ p {
   padding: 50px;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   gap: 106.667px;
 }
 
@@ -397,6 +361,7 @@ p {
   line-height: 26px;
 }
 
+/* FOOTER */
 .Footer {
   display: flex;
   justify-content: space-between;
@@ -426,6 +391,7 @@ p {
 .Footer > div >h2 {
   padding-top: 50px;
 }
+
 
 .ReachUs {
   margin-top: 18px;
@@ -507,10 +473,7 @@ p {
   background-color: var(--bg-shade);
   margin-top: 50px;
 }
-.sections--heading {
-  color: var(--primary);
-  
-}
+
 .testimonial--section--card {
   display: flex;
   padding: 42.6px;
@@ -699,6 +662,7 @@ p {
   align-items: center;
   border-radius: 5px;
 }
+
 /* CONTACT */
 .text-lg {
   color: var(--darkblue);
@@ -713,7 +677,38 @@ p {
   font-weight: 600;
   line-height: 24px;
 }
+.btn {
+  font-family: "Roboto";
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
 
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btn-primary:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
 .contact--section {
   display: flex;
   padding: 65px 85px 150px 85px;
@@ -785,24 +780,7 @@ input[type="checkbox"] {
 }
 /* Contact End */
 
-/* animations */
 
-@keyframes textReveal {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animation1 {
-  opacity: 0; /* Ensure the text starts invisible */
-  animation: textReveal 1s ease forwards; /* Use the forwards option to maintain the final state */
-  overflow: hidden; /* Ensures that overflowing content is not visible during the animation */
-}
 
 /* animations */
 
@@ -944,3 +922,64 @@ input[type="checkbox"] {
   
   }
 } */
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media only screen and (max-width: 1600px) {
+  .services--section--heading {
+    font-size: 54px;
+    line-height: 70px;
+  }
+  .services--section--container {
+    gap: 16px;
+  }
+  .services--section--card {
+    gap: 28px;
+  }
+  .services--section--card--content {
+    gap: 20px;
+  }
+  .services--section--title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .services--section--description {
+    font-size: 17.333px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  
+  .services--section--container,
+  .services--section,
+  .portfolio--container-box {
+    gap: 30px;
+  }
+  .services--section,
+  .testimonial--section,
+  .testimonial--section--card,
+  .contact--section {
+    padding: 25px;
+  }
+  .testimonial--section--card {
+    margin-right: 55px;
+    margin-left: 55px;
+  }
+  .contact--section {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+  .services--section--container,
+  .portfolio--section--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .services--section--heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .contact--form--container {
+    width: 100%;
+  }
+  
+}
