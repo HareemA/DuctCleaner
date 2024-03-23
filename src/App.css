@@ -117,6 +117,48 @@ p {
   position: relative;
   opacity: 70%;
 }
+/* HEADER TRIAL*/
+.main--image{
+  position: relative;
+  background: URL("../src/Images/men-working-with-equipment-full-shot.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow:hidden;
+}
+
+.header--container {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50% );
+  text-align: center;
+  color: #EEEEEE;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header--container h1 {
+  margin:0;
+  font-size: 66px;
+
+}
+
+.header--container h1 span {
+  border: 6px solid #FFB61E;
+  padding: 6px 14px;
+  display: inline-block;
+  color:#FFB61E;
+}
+
+.cen {
+  margin: 20px;
+  display: block;
+  font-size: 26px;
+
+}
+
+
+
 
 /* NavBar for Width less than 830*/
 .dropdown {
