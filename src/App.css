@@ -957,7 +957,6 @@ input[type="checkbox"] {
     font-size: 16px;
 
   }
-<<<<<<< HEAD
   .servives-heading {
     font-size: 30px;
   }
@@ -970,8 +969,6 @@ input[type="checkbox"] {
 
 
 }
-=======
-} */
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 @media only screen and (max-width: 1600px) {
@@ -1033,4 +1030,3 @@ input[type="checkbox"] {
   }
   
 }
->>>>>>> b09f665c317eb49ec1d455da648f6b78b81b00c5
