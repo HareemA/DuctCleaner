@@ -1,53 +1,100 @@
 import React from "react";
-import mail from '../Images/mail (1).png';
-import home from '../Images/home.png';
+import mail from "../Images/mail (1).png";
+import home from "../Images/home.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
-    return (
-        <div className="Footer">
-            <div>
-                <h2>Service Area</h2>
-                <ul>
-                    <li>Toronto</li>
-                    <li>Ottowa</li>
-                    <li>Ajax</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Air Duct Inspection</li>
-                    <li>Duct Cleaning</li>
-                    <li>Furnance and Air Handler Cleaning</li>
-                    <li>Mold and Mildew Remediation</li>
-                    <li>Dryer Vent Cleaning</li>
-                    <li>HVAC System Maintenance</li>
-                    <li>Dryer Vent Cleaning</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Company</h2>
-                <ul>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Reach Us</h2>
-                <div className="ReachUs">
-                    <h3>(416) 247 8898</h3>
-                    <div className="mail-div">
-                        <img src={mail} className="mail"/>
-                        <h6>Fsadc2023@gmail.com</h6>
-                    </div>
-                    <div className="mail-div">
-                        <img src={home} className="mail"/>
-                        <h6>54 Shorting Rd Scarborough, <br/> ON ,M1S 3S4</h6>
-                    </div>
-
-
-                </div>
+  return (
+    <section className="footer--container">
+        <div className="footer">
+      <div className="footer-row">
+        <div className="footer-col">
+          <h4>Service Area</h4>
+          <ul className="links">
+            <li>
+              <a href="#">Toronto</a>
+            </li>
+            <li>
+              <a href="#">Ottawa</a>
+            </li>
+            <li>
+              <a href="#">Ajax</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>Our Services</h4>
+          <ul className="links">
+            <li>
+              <a href="#">Air Duct Inspection</a>
+            </li>
+            <li>
+              <a href="#">Duct Cleaning</a>
+            </li>
+            <li>
+              <a href="#">Furnance and Air Handler Cleaning</a>
+            </li>
+            <li>
+              <a href="#">Mold and Mildew Remediation</a>
+            </li>
+            <li>
+              <a href="#">Dryer Vent Cleaning</a>
+            </li>
+            <li>
+              <a href="#">HVAC System Maintenance</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>Company</h4>
+          <ul className="links">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">BookNow</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Our Tools</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>Reach Us</h4>
+          <p>
+            <h3>(416) 247 8898</h3>
+          </p>
+          <div className="mail-div">
+            <img src={mail} className="mail" />
+            <h6>Fsadc2023@gmail.com</h6>
+          </div>
+          <div className="mail-div">
+            <img src={home} className="mail" />
+            <h6>
+              54 Shorting Rd Scarborough, <br /> ON ,M1S 3S4
+            </h6>
+          </div>
+          <div className="icons">
+                <FontAwesomeIcon className="ic fa-brands fa-facebook-f" icon={faFacebookF} />
+                <FontAwesomeIcon className="ic fa-brands fa-twitter" icon={faTwitter} />
+                <FontAwesomeIcon className="ic fa-brands fa-linkedin" icon={faLinkedin} />
             </div>
         </div>
-    )
+      </div>
+      </div>
+    </section>
+  );
 }
