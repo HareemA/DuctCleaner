@@ -9,7 +9,7 @@ export default function BookPage() {
         <div>
             <NavBar/>
             <BookHeader/>
-            <h1 className="servives-heading">Book an Appointment with us</h1>
+            <h1 className="book-heading">Book an Appointment with us</h1>
             <BookCard/>
             <Footer/>
         </div>
