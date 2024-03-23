@@ -37,7 +37,7 @@ p {
   justify-content: space-between;
   box-shadow: 0 0 3px 3px gray;
   height: 90px;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
 }
 
@@ -401,7 +401,7 @@ p {
   display: flex;
   justify-content: space-between;
   height: 300px;
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 0 200px 0 200px;
   font-family: "Montserrat", sans-serif;
   color: #dda900;
@@ -457,7 +457,7 @@ p {
 
 /* Services Page */
 .servicesImg {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   height: 530px;
   width: 100%;
 }
@@ -699,6 +699,94 @@ p {
 }
 
 /* CONTACT */
+
+
+.contact--banner--container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #052a49;
+  font-family: 'Arvo';
+  height: 330px;
+  width: 100%;
+}
+
+.contact--banner--heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f8faf7; 
+  font-size: 4rem;
+  position: relative;
+  font-family: 'Arvo';
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E08A1E;
+}
+
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;  
+}
+
+@keyframes slide {
+  0% {
+      top: 0;
+  }
+  25% {
+      top: -4rem;    
+  }
+  50% {
+      top: -8rem;
+  }
+  72.5% {
+      top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #F1FAEE; 
+      font-size: 2.125rem;
+  }
+
+  .roller {
+      height: 2.6rem; 
+      line-height: 2.125rem;  
+  }
+
+  .roller #rolltext {  
+      animation: slide-mob 5s infinite;  
+  }
+
+  @keyframes slide-mob {
+      0% {
+          top: 0;
+      }
+      25% {
+          top: -2.125rem;    
+      }
+      50% {
+          top: -4.25rem;
+      }
+      72.5% {
+          top: -6.375rem;
+      }
+  }
+}
 .text-lg {
   color: var(--darkblue);
   font-size: 18px;
@@ -831,9 +919,9 @@ input[type="checkbox"] {
 }
 
 .animation1 {
-  opacity: 0; /* Ensure the text starts invisible */
-  animation: textReveal 2s ease forwards; /* Use the forwards option to maintain the final state */
-  overflow: hidden; /* Ensures that overflowing content is not visible during the animation */
+  opacity: 0;
+  animation: textReveal 2s ease forwards; 
+  overflow: hidden;
 }
 
 /* Pricing Page*/
