@@ -666,9 +666,69 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+.services-h3 {
+  color: #052a49;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.services-type-main {
+  margin-top: 50px;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+
+}
+
+.services-type {
+  box-shadow: 0 6px 6px 6px rgb(212, 207, 207);;
+  padding: 20px 10px 10px 20px;
+}
+
+.services-types-heading {
+  color: #052a49;
+  font-size: 27px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.services-types-para {
+  color: #052a49;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+}
+
+.services-types-list {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color: #052a49;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.services-types-list> li{
+  background-image: url(../src/Images/check.png);
+  background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+  padding-left: 30px;
+  list-style-type: none;
+
+}
+
+
 /* Booking Page */
 .book-header-image {
-  margin-top: 90px;
   width: 100%;
   height: 450px;
   position: relative;
@@ -1283,6 +1343,11 @@ input[type="checkbox"] {
   }
 }
 
+@media only screen and (max-width:972px) {
+  .services-type-main {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width:476px) {
   .services-para {
     color: black;
