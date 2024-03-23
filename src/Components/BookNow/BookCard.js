@@ -17,7 +17,7 @@ export default function BookCard() {
             }
             
         })
-        console.log(formData)
+
     }
     return (
         <div className="book-card">
