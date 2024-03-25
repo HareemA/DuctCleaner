@@ -31,7 +31,7 @@ export default function ServicesCard() {
             {
                 ServicesData.map(data =>
                     <div className="services-card" style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
-                        <h2>{data.heading}</h2>
+                        <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
                     </div>)
             }
         </div>

@@ -62,6 +62,14 @@ export default function Services() {
           </div>
         ))}
       </div>
+    {/* <div className="service-card-conatiner">
+        {
+            ServicesData.map(data =>
+                <div className="services-card" style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
+                    <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
+                </div>)
+        }
+    </div> */}
     </section>
   );
 }
