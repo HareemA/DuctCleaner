@@ -1,19 +1,16 @@
 import React from "react";
 // import duct from '../Images/duct.jpg'
-import duct from '../Images/3d-rendering-ventilation-system.jpg';
-import duct2 from '../Images/duct.jpg';
-import duct3 from '../Images/Mold-Remediation-Services-1.jpg';
-import duct4 from '../Images/maintenance.jpg';
-import duct5 from '../Images/men-working-with-equipment-full-shot.jpg';
 
 export default function Header() {
     
 
     return (
-        <div className="main--image">
+    <div className="main--image">
         <div className="header--container">
-            <h1><span>GTA</span></h1>
-            <span className="cen">DUCT CLEANING</span>
+            <h1><span>Breathing Life into Clean Air</span></h1>
+            {/* <h3><span className="cen">Trusted Duct cleaning Experts</span></h3> */}
+            <h3><span className="cen">Prices starting as low as 300$</span></h3>
+            
         </div>
     </div>
         

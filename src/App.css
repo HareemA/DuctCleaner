@@ -28,6 +28,18 @@ p {
   --white: #ffffff;
 }
 
+.message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
 
 
 /* NAVBAR */
@@ -124,6 +136,11 @@ p {
   background-size: cover;
   height: 500px;
   overflow:hidden;
+  margin-top: 20px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header--container {
@@ -135,26 +152,39 @@ p {
   color: #EEEEEE;
   font-weight: 700;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .header--container h1 {
   margin:0;
   font-size: 66px;
-
 }
 
 .header--container h1 span {
-  border: 6px solid #FFB61E;
+  /* border: 6px solid #FFB61E; */
   padding: 6px 14px;
   display: inline-block;
-  color:#FFB61E;
+  color: #052a49;
+  background-color: rgba(204, 204, 204, 0.5);
+  
+}
+
+.header--container h3 {
+  width: 60%;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
 }
 
 .cen {
   margin: 20px;
   display: block;
-  font-size: 26px;
-
+  font-size: 30px;
+  color: #FFB61E;
+  border: 2px solid #FFB61E;
+  padding: 10px 10px 10px 10px;
 }
 
 
@@ -223,8 +253,12 @@ p {
 
 .card-main {
   background-color: rgb(236, 236, 236);
-
-  
+  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.637), rgba(255, 255, 255, 0.5)), url('./Images/3d-rendering-ventilation-system.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {

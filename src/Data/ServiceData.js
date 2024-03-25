@@ -29,27 +29,20 @@ const ServiceData = [
     },
     {
         id:4, 
-        heading:"Mold and Mildew Remediation",
-        img: mold,
-        position: "right",
-        para: " Duct cleaning companies may offer mold and mildew remediation services to address issues of mold growth within HVAC ductwork. This involves identifying areas of mold contamination, applying antimicrobial treatments to kill mold spores, and physically removing mold from duct surfaces using specialized cleaning techniques."
-    },
-    {
-        id:5, 
         heading:"Dryer Vent Cleaning",
         img: vent,
         position: "left",
         para: "Some duct cleaning companies also offer dryer vent cleaning services to remove lint, dust, and debris from dryer vents and ductwork. This helps to prevent dryer fires, improve dryer performance, and reduce energy consumption by ensuring proper airflow and ventilation"
     },
     {
-        id:6, 
+        id:5, 
         heading:"HVAC System Maintenance",
         img: Hvac,
         position: "right",
         para: "Duct cleaning companies may provide routine maintenance services to help homeowners and building owners maintain the cleanliness and efficiency of their HVAC systems. This may include inspection, cleaning, lubrication, and adjustment of system components to ensure optimal performance and longevity."
     },
     {
-        id:7, 
+        id:6, 
         heading:"Indoor Air Quality Testing",
         img: air,
         position: "left",

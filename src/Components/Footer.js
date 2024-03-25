@@ -16,10 +16,31 @@ export default function Footer() {
               <a href="#">Toronto</a>
             </li>
             <li>
-              <a href="#">Ottawa</a>
+              <a href="#">Mississauga</a>
             </li>
             <li>
-              <a href="#">Ajax</a>
+              <a href="#">Vaughan</a>
+            </li>
+            <li>
+              <a href="#">Brampton</a>
+            </li>
+            <li>
+              <a href="#">Oshawa</a>
+            </li>
+            <li>
+              <a href="#">Richmond Hill</a>
+            </li>
+            <li>
+              <a href="#">Newmarket</a>
+            </li>
+            <li>
+              <a href="#">Oakville</a>
+            </li>
+            <li>
+              <a href="#">Pickering</a>
+            </li>
+            <li>
+              <a href="#">Aurora</a>
             </li>
           </ul>
         </div>

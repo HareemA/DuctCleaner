@@ -1,6 +1,9 @@
-import { useState } from "react"
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function PriceCard() {
+    const [ isMsgSent ,SetIsMsgSent] = useState(false);
+
     const [formData , setFormData] = useState({
         Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
         indoor:false , none:false , name:"" , email:"" , phone:"" ,
@@ -16,13 +19,70 @@ export default function PriceCard() {
             }
             
         })
-        console.log(formData)
+        
     }
+    const sendEmail = (e) => {
+        e.preventDefault()
+        const selectedServices = Object.entries(formData)
+            .filter(([key, value]) => value === true && key !== 'name' &&  key !== 'email' && key !== 'phone' && key !== 'message')
+            .map(([key]) => key);
+    
+        // Create a hidden form element
+        const hiddenForm = document.createElement('form');
+        hiddenForm.style.display = 'none';
+    
+        // Add input fields to the form for each piece of data
+        const fields = {
+            TOPIC: 'QUOTE',
+            selectedServices: selectedServices.join(', '),
+            Name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            message:formData.message
+        };
+    
+        Object.entries(fields).forEach(([key, value]) => {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = value;
+            hiddenForm.appendChild(input);
+        });
+    
+        // Append the form to the body and submit it
+        document.body.appendChild(hiddenForm);
+        
+        emailjs.sendForm('service_to1tlut', 'template_99rwqi2', hiddenForm, {
+            publicKey: 'kQUuqdkF61yxJTNtT',
+        })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    SetIsMsgSent(true);
+                    setTimeout(() => {
+                        SetIsMsgSent(false); // Hide the message sent dialog after 3 seconds
+                    }, 3000);
+                    setFormData({Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
+                        indoor:false , none:false , name:"" , email:"" , phone:"" ,
+                        message:""})
+                    
+                },
+                (error) => {
+                    console.log('FAILED', error);
+                }
+            );
+    
+        // Clean up: Remove the form from the DOM after submission
+        document.body.removeChild(hiddenForm);
+    };
     return (
         <div>
             <h1 className="quote-heading">Get a Quote</h1>
+            {isMsgSent && 
+                <div className="message-box">Message Sent Successfully!</div>
+            }
             <div className="book-card">
-            <form className="form">
+            <form className="form" onSubmit={sendEmail}>
                 <div className="services-checkbox">
                     <p>What Services would you like know About?</p>
                     <div className="Name">
@@ -54,7 +114,7 @@ export default function PriceCard() {
                         <label htmlFor="indoor">Indoor Air Quality Testing</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="none" name="indoor" checked={formData.none} onChange={handleChange}/>
+                        <input type="checkbox" id="none" name="none" checked={formData.none} onChange={handleChange}/>
                         <label htmlFor="none">None</label>
                     </div>
                 </div>

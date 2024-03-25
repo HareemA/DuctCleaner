@@ -22,24 +22,18 @@ const Services = [
       },
       {
         "id": "3",
-        "src": compressor,
-        "title": "Mold and Mildew Remediation",
-        "description": "We offer mold and mildew remediation services to address issues of mold growth within HVAC ductwork. This is done suing specialized mold cleaning techniques."
-      },
-      {
-        "id": "4",
         "src": vent,
         "title": "Dryer Vent Cleaning",
         "description": "Dryer Vent Cleaning services to remove lint, dust, and debris from dryer vents and ductwork. This ensures proper airflow and ventilation, improve dryer performance and helps prevent dry fires"
       },
       {
-        "id": "5",
+        "id": "4",
         "src": accessTools,
         "title": "HVAC System Maintenance",
         "description": "Routine Maintenance Services to help homeowners and building owners maintain the cleanliness and efficiency of their HVAC systems, and to optimize them."
       },
       {
-        "id": "6",
+        "id": "5",
         "src": air,
         "title": "Indoor Air Quality Testing",
         "description": "Indoor Air Quality testing to assess the level of pollutants and contaminants present in the indoor environment inorder to identify and remediate potential health hazards"

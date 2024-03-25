@@ -1,12 +1,17 @@
-import React, {useState} from "react"
+import React, {useState, useRef} from "react";
+import emailjs from '@emailjs/browser';
 
 export default function BookCard() {
+
+    const [isMsgSent , SetIsMsgSent] = useState(false);
 
     const [formData , setFormData] = useState({
         Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
         indoor:false , firstName:"" , lastName:"" , email:"" , phone:"" , address:"" ,
         city: "", postalCode: "" , type:""
     })
+
+    const form = useRef();
 
     function handleChange(event) {
         const {name, value, type , checked} = event.target
@@ -19,9 +24,71 @@ export default function BookCard() {
         })
 
     }
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const selectedServices = Object.entries(formData)
+            .filter(([key, value]) => value === true && key !== 'firstName' && key !== 'lastName' && key !== 'email' && key !== 'phone' && key !== 'address' && key !== 'city' && key !== 'postalCode' && key !== 'type')
+            .map(([key]) => key);
+    
+        // Create a hidden form element
+        const hiddenForm = document.createElement('form');
+        hiddenForm.style.display = 'none';
+    
+        // Add input fields to the form for each piece of data
+        const fields = {
+            TOPIC: 'BOOKING',
+            selectedServices: selectedServices.join(', '),
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            phone: formData.phone,
+            address: formData.address,
+            city: formData.city,
+            postalCode: formData.postalCode,
+            type: formData.type
+        };
+    
+        Object.entries(fields).forEach(([key, value]) => {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = value;
+            hiddenForm.appendChild(input);
+        });
+    
+        // Append the form to the body and submit it
+        document.body.appendChild(hiddenForm);
+        
+        emailjs.sendForm('service_to1tlut', 'template_2rvne8m', hiddenForm, {
+            publicKey: 'kQUuqdkF61yxJTNtT',
+        })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    SetIsMsgSent(true);
+                    setTimeout(() => {
+                        SetIsMsgSent(false); // Hide the message sent dialog after 3 seconds
+                    }, 3000);
+                    setFormData({Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
+                        indoor:false , firstName:"" , lastName:"" , email:"" , phone:"" , address:"" ,
+                        city: "", postalCode: "" , type:""})
+                },
+                (error) => {
+                    console.log('FAILED', error);
+                }
+            );
+    
+        // Clean up: Remove the form from the DOM after submission
+        document.body.removeChild(hiddenForm);
+    };
+    
     return (
         <div className="book-card">
-            <form className="form">
+            {isMsgSent && 
+                <div className="message-box">Message Sent Successfully!</div>
+            }
+            <form className="form" onSubmit={sendEmail} ref={form}>
                 <div className="services-checkbox">
                     <p>What Service would you like?</p>
                     <div>
