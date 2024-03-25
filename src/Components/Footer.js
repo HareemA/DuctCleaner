@@ -100,7 +100,7 @@ export default function Footer() {
           </p>
           <div className="mail-div">
             <img src={mail} className="mail" />
-            <h6>Fsadc2023@gmail.com</h6>
+            <h6>gtaductcleaning001@gmail.com</h6>
           </div>
           <div className="mail-div">
             <img src={home} className="mail" />
