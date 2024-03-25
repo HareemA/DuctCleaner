@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import ServicesData from "../Data/ServicesData";
 import { Link } from "react-router-dom";
+import Reveal from '../animation/Reveal';
 
 function useOnScreen(refs, rootMargin = "0px") {
   const [isIntersecting, setIntersecting] = useState(Array(refs.length).fill(false));
