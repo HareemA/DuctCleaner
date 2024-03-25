@@ -6,6 +6,7 @@ import Services from './Components/Services';
 import Tools from './Components/Tools';
 import Footer from './Components/Footer';
 import Testimonials from './Components/Testimonials';
+import {Reveal} from './animation/Reveal';
 
 function App() {
   return (

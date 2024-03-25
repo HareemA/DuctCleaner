@@ -21,12 +21,12 @@ export default function Header() {
     };
 
     const pulseAnimation = {
-        scale: [1, 1.2, 1], // Start from normal size, increase to 20% larger, and back to normal
+        scale: [1, 1.2, 1], 
         transition: {
-            duration: 4, // Duration of one cycle of the animation
-            ease: "easeInOut", // Easing function to make the animation smooth
-            repeat: Infinity, // Repeat the animation indefinitely
-            repeatType: "loop", // Ensure the animation loops from start to end
+            duration: 3, 
+            ease: "easeInOut", 
+            repeat: Infinity, 
+            repeatType: "loop", 
         }
     };
 
