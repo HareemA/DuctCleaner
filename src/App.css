@@ -592,21 +592,6 @@ p {
 
 
 
-
-/* Services Page */
-
-.main--image--services{
-  position: relative;
-  background: URL("../src/Images/services-bg.jpg") no-repeat center;
-  background-size: cover;
-  height: 500px;
-  overflow:hidden;
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
-
 /* Testimonial */
 .portfolio--section {
   display: flex;
@@ -736,16 +721,17 @@ p {
 .services-card {
   margin-top: 60px;
   display: flex;
-  width: 60%;
+  width: 30%;
   /* background-color: gray; */
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   /* background-color: rgb(197, 193, 193);  */
-  box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
-  height: 350px;
+  /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
+  height: 250px;
+  border-radius: 15px;
 }
 
-.services-img {
+/* .services-img {
   width: 40%;
   height: 100%;
   
@@ -757,13 +743,40 @@ p {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-}
+} */
 
 .service-card-conatiner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.service-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccb0b0;
+  width: 40%;
+}
+
+
+.servives-heading {
+  color: rgb(65, 88, 208);
+  font-size: 95px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+.services-para-main {
+  width: 30%;
 }
 
 .services-para {
@@ -772,7 +785,7 @@ p {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
-  padding-right: 20px;
+  padding-right: 14px;
 
 }
 
@@ -780,6 +793,17 @@ p {
   color: #015395;
   font-size: 27px;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50%;
+  text-align: center;
+}
+
+.service-card-heading span {
+  background-color: rgba(237, 243, 248, 0.7);
 }
 
 .services-h3 {
@@ -801,23 +825,33 @@ p {
   margin-left: auto;
   margin-right: auto;
   gap: 20px; */
-  width: 45%;
-  display: grid;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   gap: 52.6px;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  width: 80%;
+
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .services-type {
   box-shadow: 0 6px 6px 6px rgb(212, 207, 207);;
   padding: 38px 12px 38px 12px;
-  background-size: cover;
+  width: 40%;
 }
 
 
@@ -854,8 +888,8 @@ p {
 }
 
 .types-images {
-  width: 100%;
-  height: auto;
+  width: 40%;
+  height: 400px;
 }
 
 
@@ -1354,20 +1388,46 @@ input[type="checkbox"] {
   .services-card {
     margin-top: 60px;
     display: flex;
-    width: 40%;
+    width: 70%;
     /* background-color: gray; */
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: rgb(197, 193, 193);  */
-    /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
+    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
     height: auto
   }
 
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
 }
+
 
 @media only screen and (max-width: 542px) {
   .book-heading {
     font-size: 45px;
   }
 
+
+}
+
+@media only screen and (max-width:841px) {
+  .types-images {
+    width: 80%;
+    height: 400px;
+  }
+  
+  .services-type {
+    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);;
+    padding: 38px 12px 38px 12px;
+    width: 80%;
+  }
 
 }
 
