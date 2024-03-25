@@ -1,6 +1,7 @@
 import React from "react";
 import ServicesData from '../../Data/ServiceData';
 import CardData from "../../Data/CardData";
+import { Link } from "react-router-dom";
 
 export default function ServicesCard() {
     // const Services = ServicesData.map(data => (
@@ -28,12 +29,13 @@ export default function ServicesCard() {
 
     return (
         <div className="service-card-conatiner">
-            {
-                ServicesData.map(data =>
-                    <div className="services-card" style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
+            {ServicesData.map(data => (
+                <Link className="services-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
+                    
                         <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
-                    </div>)
-            }
+                    
+                </Link>
+            ))}
         </div>
     );
 }

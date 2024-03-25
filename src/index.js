@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import PricePage from './Components/Pricing/PricePage';
+import ServiceCardInner from './Components/Services/ServiceCardInner';
 
 const router = createHashRouter([
   {
@@ -34,6 +35,10 @@ const router = createHashRouter([
   {
     path: "/Price",
     element: <PricePage/>,
+  },
+  {
+    path: "/ServicesInner",
+    element: <ServiceCardInner/>,
   },
   
 ]);

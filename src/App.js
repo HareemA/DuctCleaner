@@ -23,6 +23,7 @@ function App() {
             </h1>
         </div>
       <Header/>
+      <h1 className="servives-heading">OUR SERVICES</h1>
       <Services/>
       <Benifits/>
       

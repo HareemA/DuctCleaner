@@ -729,8 +729,12 @@ p {
   /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
   height: 250px;
   border-radius: 15px;
+  text-decoration: none;
 }
 
+.service-card-.container:hover {
+  box-shadow: 6px 6px 6px 6px gray;
+}
 /* .services-img {
   width: 40%;
   height: 100%;
@@ -800,6 +804,7 @@ p {
   margin-left: auto;
   margin-top: 50%;
   text-align: center;
+  text-decoration: none;
 }
 
 .service-card-heading span {
@@ -891,6 +896,57 @@ p {
   width: 40%;
   height: 400px;
 }
+
+  /* Service card inner*/
+  .services-inner-card {
+    margin-top: 60px;
+    display: flex;
+    width: 60%;
+    /* background-color: gray; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgb(197, 193, 193);  */
+    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
+    height: 350px;
+  }
+  
+  .services-inner-img {
+    width: 40%;
+    height: 100%;
+    
+  }
+  
+  .services-inner-card > div{
+    padding-left: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  .service-inner-card-conatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .services-inner-para {
+    color: black;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  
+  }
+  
+  .service-inner-card-heading {
+    color: #052a49;
+    font-size: 27px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
 
 
 /* Booking Page */
@@ -1240,7 +1296,7 @@ input[type="checkbox"] {
   padding-left: 17px;
   box-shadow: 0 2px 2px 4px #cfdbe6;
   padding-right: 17px;
-  background-color: #015395;
+  background-color: #dda900;;
 }
 
 .price-data-1 >p {
@@ -1259,7 +1315,7 @@ input[type="checkbox"] {
   padding-left: 17px;
   box-shadow: 0 2px 2px 4px #cfdbe6;
   padding-right: 17px;
-  background-color: #015395;
+  background-color: #dda900;;
 }
 
 .price-data-2 >p {
@@ -1330,6 +1386,35 @@ input[type="checkbox"] {
   text-align: center;
 }
 
+.table-div {
+  width: 100%;
+}
+.table {
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #dda900;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.table th:first-child, .table td:first-child {
+  width: 1500px; 
+}
+
+.table th:last-child, .table td:last-child {
+  width: 20%; /* Set width of last column to 20% */
+}
+
+.table th {
+  text-align: left;
+  padding: 25px 0; 
+}
+
+
 /* For Smaller Screens */
 @media only screen and (max-width: 504px) {
   .card-main-heading {
@@ -1363,14 +1448,14 @@ input[type="checkbox"] {
     font-size: 50px;
   }
   
-  .service-card-conatiner {
+  .service-inner-card-conatiner {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 30px;
   }
   
-  .services-para {
+  .services-inner-para {
     color: black;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
@@ -1380,12 +1465,12 @@ input[type="checkbox"] {
   
   }
   
-  .service-card-heading {
+  .service-inner-card-heading {
     color: #015395;
     font-size: 25px;
     font-family: "Montserrat", sans-serif;
   }
-  .services-card {
+  .services-inner-card {
     margin-top: 60px;
     display: flex;
     width: 70%;
@@ -1397,7 +1482,7 @@ input[type="checkbox"] {
     height: auto
   }
 
-  .services-container {
+  .services-inner-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -1477,7 +1562,7 @@ input[type="checkbox"] {
 
 
 @media only screen and (max-width:870px) {
-  .services-para {
+  .services-inner-para {
     color: black;
     font-size: 15px;
     font-family: "Roboto", sans-serif;
@@ -1487,12 +1572,12 @@ input[type="checkbox"] {
   
   }
   
-  .service-card-heading {
+  .service-inner-card-heading {
     color: #015395;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
   }
-  .services-card {
+  .services-inner-card {
     margin-top: 60px;
     display: flex;
     width: 80%;
@@ -1506,6 +1591,33 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width:548px) {
+  .services-inner-para {
+    color: black;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  
+  }
+  
+  .service-inner-card-heading {
+    color: #015395;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .services-inner-card {
+    margin-top: 60px;
+    display: flex;
+    width: 95%;
+    /* background-color: gray; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgb(197, 193, 193);  */
+    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
+    height: 280px;
+  }
+
   .services-para {
     color: black;
     font-size: 14px;
@@ -1538,8 +1650,48 @@ input[type="checkbox"] {
   .services-type-main {
     flex-direction: column;
   }
+  .services-container {
+    flex-direction: column;
+  
+  }
 }
 @media only screen and (max-width:476px) {
+  .services-inner-para {
+    color: black;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: -10px;
+  
+  }
+  
+  .service--innercard-heading {
+    color: #015395;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .services-inner-card {
+    margin-top: 60px;
+    display: flex;
+    width: 97%;
+    /* background-color: gray; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgb(197, 193, 193);  */
+    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
+    height: 220px;
+  }
+
+  .services-inner-card > div{
+    padding-left: 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
   .services-para {
     color: black;
     font-size: 10px;
@@ -1551,7 +1703,7 @@ input[type="checkbox"] {
   
   }
   
-  .service-card-heading {
+  .service-heading {
     color: #015395;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
