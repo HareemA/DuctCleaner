@@ -592,10 +592,17 @@ p {
 
 
 /* Services Page */
-.servicesImg {
-  /* margin-top: 70px; */
-  height: 530px;
-  width: 100%;
+
+.main--image--services{
+  position: relative;
+  background: URL("../src/Images/men-working-with-equipment-full-shot.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow:hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Testimonial */
@@ -681,6 +688,17 @@ p {
   height: 530px;
   width: 100%;
 }
+
+.cen-service {
+  margin: 20px;
+  display: block;
+  font-size: 30px;
+  color: #FFB61E;
+  border: 2px solid #FFB61E;
+  padding: 10px 10px 10px 10px;
+  width: 50%;
+}
+
 .servives-heading {
   color: #052a49;
   font-size: 95px;
