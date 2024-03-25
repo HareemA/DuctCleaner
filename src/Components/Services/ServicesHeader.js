@@ -6,7 +6,7 @@ export default function ServicesHeader() {
         <div className="main--image--services">
             <div className="header--container">
                 <h1><span>SERVICES</span></h1>
-                <span className="cen">Our Services</span>
+                <span className="cen-services">Avail the Best Cleaning Services</span>
             </div>
         </div>
     )

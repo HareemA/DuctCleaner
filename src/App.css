@@ -83,7 +83,7 @@ p {
 .navbar--mid > h6 {
   font-size: 17px;
   font-family: "Montserrat", sans-serif;
-  color: rgb(30, 30, 139);
+  color: rgb(65, 88, 208);
   font-weight:431;
 }
 
@@ -110,7 +110,7 @@ p {
   width: 110px;
   font-size: 17px;
   font-family: "Montserrat", sans-serif;
-  color: rgb(30, 30, 139);
+  color: rgb(65, 88, 208);
   margin-right: 20px;
   width: 120px;
   justify-content: center;
@@ -119,7 +119,7 @@ p {
 }
 
 .book:hover {
-  background-color:  rgb(30, 30, 139);
+  background-color:  rgb(65, 88, 208);
   color: #dda900;
 }
 
@@ -164,7 +164,7 @@ p {
   /* border: 6px solid #FFB61E; */
   padding: 6px 14px;
   display: inline-block;
-  color: #052a49;
+  color: rgb(65, 88, 208);
   background-color: rgba(204, 204, 204, 0.5);
   
 }
@@ -211,7 +211,7 @@ p {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: rgb(30, 30, 139);
+  color: rgb(65, 88, 208);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -291,7 +291,7 @@ p {
 
 .card > h2 {
   font-size: 24px;
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-weight: 400;
 }
 
@@ -315,7 +315,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
   text-align: center;
-  color:  #052a49;
+  color:  rgb(65, 88, 208);
   font-weight: 400;
   padding-top: 30px;
 }
@@ -364,7 +364,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
   text-align: center;
-  color:  #052a49;
+  color:  rgb(65, 88, 208);
   font-weight: 400;
   
 }
@@ -381,7 +381,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-align: center;
-  color:  #052a49;
+  color:  rgb(65, 88, 208);
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
@@ -398,14 +398,14 @@ p {
 .services--section--heading {
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
-  color:  #052a49;
+  color:  rgb(65, 88, 208);
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
 }
 
 .services--section--heading--link {
-  color:  #052a49;
+  color:  rgb(65, 88, 208);
   text-decoration: none;
 }
 
@@ -458,7 +458,7 @@ p {
   align-self: stretch;
 }
 .services--section--title {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 26px;
   font-weight: 700;
   line-height: 40px;
@@ -484,7 +484,7 @@ p {
 .footer {
   position: relative;
   width: 100%;
-  background: #052a49;
+  background: rgb(65, 88, 208);
 }
 
 .footer .footer-row {
@@ -595,14 +595,14 @@ p {
 
 .main--image--services{
   position: relative;
-  background: URL("../src/Images/men-working-with-equipment-full-shot.jpg") no-repeat center;
+  background: URL("../src/Images/services-bg.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   overflow:hidden;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* Testimonial */
@@ -689,18 +689,35 @@ p {
   width: 100%;
 }
 
-.cen-service {
+.main--image--services{
+  position: relative;
+  background: URL("https://iv2b2a.p3cdn1.secureserver.net/wp-content/uploads/2018/12/duct-cleaning-toronto-1.jpg?time=1711155746") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  overflow:hidden;
+  /* background-attachment: fixed; */
+  /* background-position: top; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.cen-services {
   margin: 20px;
-  display: block;
+  display: flex;
   font-size: 30px;
   color: #FFB61E;
   border: 2px solid #FFB61E;
   padding: 10px 10px 10px 10px;
-  width: 50%;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
 .servives-heading {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 95px;
   font-family: "Montserrat", sans-serif;
   left: 60px;
@@ -758,13 +775,13 @@ p {
 }
 
 .service-card-heading {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 27px;
   font-family: "Montserrat", sans-serif;
 }
 
 .services-h3 {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -775,31 +792,42 @@ p {
 }
 
 .services-type-main {
-  margin-top: 50px;
+  /* margin-top: 50px;
   display: flex;
-  width: 90%;
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  gap: 20px;
+  gap: 20px; */
+  width: 45%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 52.6px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  width: 80%;
 
 }
 
 .services-type {
   box-shadow: 0 6px 6px 6px rgb(212, 207, 207);;
-  padding: 20px 10px 10px 20px;
+  padding: 38px 12px 38px 12px;
+  background-size: cover;
 }
 
+
 .services-types-heading {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 27px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 .services-types-para {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   padding-top: 20px;
@@ -809,7 +837,7 @@ p {
   display: flex;
   flex-direction: column;
   gap:10px;
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
@@ -823,6 +851,11 @@ p {
 
 }
 
+.types-images {
+  width: 100%;
+  height: auto;
+}
+
 
 /* Booking Page */
 .book-header-image {
@@ -832,7 +865,7 @@ p {
 }
 
 .book-heading {
-  color: #052a49;
+  color: rgb(65, 88, 208);
   font-size: 95px;
   font-family: "Montserrat", sans-serif;
   left: 60px;
@@ -914,7 +947,7 @@ p {
   margin-right: auto;
   height: 45px;
   width: 170px;
-  background-color: #052a49;
+  background-color: rgb(65, 88, 208);
   border: 1px solid black;
   color: white;
   font-size: 20px;
@@ -932,7 +965,7 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #052a49;
+  background-color: rgb(65, 88, 208);
   font-family: 'Arvo';
   height: 330px;
   width: 100%;
@@ -1171,7 +1204,7 @@ input[type="checkbox"] {
   padding-left: 17px;
   box-shadow: 0 2px 2px 4px #cfdbe6;
   padding-right: 17px;
-  background-color: #052a49;
+  background-color: rgb(65, 88, 208);
 }
 
 .price-data-1 >p {
@@ -1190,7 +1223,7 @@ input[type="checkbox"] {
   padding-left: 17px;
   box-shadow: 0 2px 2px 4px #cfdbe6;
   padding-right: 17px;
-  background-color: #052a49;
+  background-color: rgb(65, 88, 208);
 }
 
 .price-data-2 >p {
@@ -1253,7 +1286,7 @@ input[type="checkbox"] {
 
 .quote-heading {
   margin-top: 70px;
-  color:#052a49;
+  color:rgb(65, 88, 208);
   font-size: 60px;
   font-family: "Montserrat", sans-serif;
   left: 60px;
@@ -1312,20 +1345,18 @@ input[type="checkbox"] {
   }
   
   .service-card-heading {
-    color: #052a49;
+    color: rgb(65, 88, 208);
     font-size: 25px;
     font-family: "Montserrat", sans-serif;
   }
   .services-card {
     margin-top: 60px;
     display: flex;
-    width: 70%;
+    width: 40%;
     /* background-color: gray; */
-    margin-left: auto;
-    margin-right: auto;
     /* background-color: rgb(197, 193, 193);  */
-    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
-    height: 350px;
+    /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
+    height: auto
   }
 
 }
@@ -1395,7 +1426,7 @@ input[type="checkbox"] {
   }
   
   .service-card-heading {
-    color: #052a49;
+    color: rgb(65, 88, 208);
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
   }
@@ -1424,7 +1455,7 @@ input[type="checkbox"] {
   }
   
   .service-card-heading {
-    color: #052a49;
+    color: rgb(65, 88, 208);
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
   }
@@ -1459,7 +1490,7 @@ input[type="checkbox"] {
   }
   
   .service-card-heading {
-    color: #052a49;
+    color: rgb(65, 88, 208);
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
   }
