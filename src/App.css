@@ -1346,7 +1346,33 @@ input[type="checkbox"] {
   /* background-repeat: no-repeat;
   background-size: cover; */
 }
+.header--container-prices {
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translate(-50%, -50% );
+  text-align: center;
+  color: #EEEEEE;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+}
 
+.header--container-prices h1 {
+  margin:0;
+  font-size: 66px;
+  position: relative;
+}
+
+.header--container-prices h1 span {
+  /* border: 6px solid #FFB61E; */
+  padding: 6px 14px;
+  display: inline-block;
+  color: #FFB61E;
+  background-color: #eaf0f4c2;
+  
+  
+}
 .cen-prices {
   margin: 20px;
   display: flex;
@@ -1354,11 +1380,16 @@ input[type="checkbox"] {
   color: #FFB61E;
   border: 4px solid #FFB61E;
   padding: 10px 10px 10px 10px;
-  width: 30%;
+  width: 50%;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  left: 25%;
+  top:370%;
+  
+  
   /* text-shadow:
         2px 2px 0 #000,
         -2px -2px 0 #000,
