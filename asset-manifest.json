@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DuctCleaner/static/css/main.e06cff8f.css",
-    "main.js": "/DuctCleaner/static/js/main.d761b0b0.js",
+    "main.css": "/DuctCleaner/static/css/main.7c11b12d.css",
+    "main.js": "/DuctCleaner/static/js/main.07325292.js",
     "static/js/453.003a8735.chunk.js": "/DuctCleaner/static/js/453.003a8735.chunk.js",
     "static/media/3d-rendering-ventilation-system.jpg": "/DuctCleaner/static/media/3d-rendering-ventilation-system.6261c0d7c67bf1f090ae.jpg",
     "static/media/men-working-with-equipment-full-shot.jpg": "/DuctCleaner/static/media/men-working-with-equipment-full-shot.ec5faef97fe2a497a71b.jpg",
@@ -20,12 +20,12 @@
     "static/media/appointment.jpg": "/DuctCleaner/static/media/appointment.e2d1c033cc0d6b79346a.jpg",
     "static/media/vacuum (2).png": "/DuctCleaner/static/media/vacuum (2).9950e5763548537e968c.png",
     "index.html": "/DuctCleaner/index.html",
-    "main.e06cff8f.css.map": "/DuctCleaner/static/css/main.e06cff8f.css.map",
-    "main.d761b0b0.js.map": "/DuctCleaner/static/js/main.d761b0b0.js.map",
+    "main.7c11b12d.css.map": "/DuctCleaner/static/css/main.7c11b12d.css.map",
+    "main.07325292.js.map": "/DuctCleaner/static/js/main.07325292.js.map",
     "453.003a8735.chunk.js.map": "/DuctCleaner/static/js/453.003a8735.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e06cff8f.css",
-    "static/js/main.d761b0b0.js"
+    "static/css/main.7c11b12d.css",
+    "static/js/main.07325292.js"
   ]
 }
