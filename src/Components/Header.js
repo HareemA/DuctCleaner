@@ -48,7 +48,7 @@ export default function Header() {
                     className="cen"
                     animate={pulseAnimation} // Apply the defined animation
                 >
-                    <span>Prices starting as low as $300</span>
+                    <span>Check our new Deal below!</span>
                 </motion.h3>
             </motion.div>
         </div>

@@ -52,7 +52,7 @@ export default function PriceCard() {
         // Append the form to the body and submit it
         document.body.appendChild(hiddenForm);
         
-        emailjs.sendForm('service_to1tlut', 'template_99rwqi2', hiddenForm, {
+        emailjs.sendForm('service_fzy3jif', 'template_99rwqi2', hiddenForm, {
             publicKey: 'kQUuqdkF61yxJTNtT',
         })
             .then(

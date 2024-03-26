@@ -6,9 +6,9 @@ export default function BookCard() {
     const [isMsgSent , SetIsMsgSent] = useState(false);
 
     const [formData , setFormData] = useState({
-        Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
-        indoor:false , firstName:"" , lastName:"" , email:"" , phone:"" , address:"" ,
-        city: "", postalCode: "" , type:""
+        Blower_Furnance_Cleaning:false , Whole_Furance_Cleaning:false, AC_Coil_Cleaning:false, Duct_Sanitization:false, Humidified_Pad_replacement:false , Upgrade_furnace_filter:false ,
+        Standard_Package:false , firstName:"" , lastName:"" , email:"" , phone:"" , address:"" ,
+        city: "", postalCode: "" , type:"" , Additional_Vent:false, No_of_Vents:0
     })
 
     const form = useRef();
@@ -28,8 +28,14 @@ export default function BookCard() {
     const sendEmail = (e) => {
         e.preventDefault();
         const selectedServices = Object.entries(formData)
-            .filter(([key, value]) => value === true && key !== 'firstName' && key !== 'lastName' && key !== 'email' && key !== 'phone' && key !== 'address' && key !== 'city' && key !== 'postalCode' && key !== 'type')
-            .map(([key]) => key);
+        .filter(([key, value]) => value === true && key !== 'firstName' && key !== 'lastName' && key !== 'email' && key !== 'phone' && key !== 'address' && key !== 'city' && key !== 'postalCode' && key !== 'type')
+        .map(([key]) => {
+            if (key === 'Additional_Vent' && formData.Additional_Vent) {
+                // If "Additional Vents" is checked, include the number of vents
+                return `${key} (${formData.No_of_Vents} vents)`;
+            }
+            return key;
+        });
     
         // Create a hidden form element
         const hiddenForm = document.createElement('form');
@@ -38,7 +44,8 @@ export default function BookCard() {
         // Add input fields to the form for each piece of data
         const fields = {
             TOPIC: 'BOOKING',
-            selectedServices: selectedServices.join(', '),
+            selectedPackage: formData.Standard_Package ? "Standard Package" : "No Package",
+            additionalServices: selectedServices.join(', '),
             firstName: formData.firstName,
             lastName: formData.lastName,
             email: formData.email,
@@ -60,7 +67,7 @@ export default function BookCard() {
         // Append the form to the body and submit it
         document.body.appendChild(hiddenForm);
         
-        emailjs.sendForm('service_to1tlut', 'template_2rvne8m', hiddenForm, {
+        emailjs.sendForm('service_fzy3jif', 'template_2rvne8m', hiddenForm, {
             publicKey: 'kQUuqdkF61yxJTNtT',
         })
             .then(
@@ -70,9 +77,9 @@ export default function BookCard() {
                     setTimeout(() => {
                         SetIsMsgSent(false); // Hide the message sent dialog after 3 seconds
                     }, 3000);
-                    setFormData({Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
-                        indoor:false , firstName:"" , lastName:"" , email:"" , phone:"" , address:"" ,
-                        city: "", postalCode: "" , type:""})
+                    setFormData({Blower_Furnance_Cleaning:false , Whole_Furance_Cleaning:false, AC_Coil_Cleaning:false, Duct_Sanitization:false, Humidified_Pad_replacement:false , Upgrade_furnace_filter:false ,
+                        Standard_Package:false , firstName:"" , lastName:"" , email:"" , phone:"" , address:"" ,
+                        city: "", postalCode: "" , type:"", Additional_Vent:false, No_of_Vents:0})
                 },
                 (error) => {
                     console.log('FAILED', error);
@@ -90,34 +97,48 @@ export default function BookCard() {
             }
             <form className="form" onSubmit={sendEmail} ref={form}>
                 <div className="services-checkbox">
-                    <p>What Service would you like?</p>
+                    <p>What Package would your like?</p>
                     <div>
-                        <input type="checkbox" id="Inspection" name="Inspection" checked={formData.Inspection} onChange={handleChange}/>
-                        <label htmlFor="Inspection">Air Duct Inspection</label>
+                        <input type="checkbox" id="Standard_Package" name="Standard_Package" checked={formData.Standard_Package} onChange={handleChange}/>
+                        <label htmlFor="Standard_Package">Standard Package</label>
+                    </div>
+                </div>
+                <div className="services-checkbox">
+                    <p>Additional Package</p>
+                    <div>
+                        <input type="checkbox" id="Additional_Vent" name="Additional_Vent" checked={formData.Additional_Vent} onChange={handleChange}/>
+                        <label htmlFor="Additional_Vent">Additional Vents</label>
+                        {formData.Additional_Vent && 
+                            <div>
+                                <label>How many Vents?</label>
+                                <input type="integer" id="No_of_vents" name="No_of_vents" value={formData.No_of_vents} onChange={handleChange}/>
+                            </div>
+                        }
+                            
                     </div>
                     <div>
-                        <input type="checkbox" id="Cleaning" name="Cleaning" checked={formData.Cleaning} onChange={handleChange}/>
-                        <label htmlFor="Cleaning">Duct Cleaning</label>
+                        <input type="checkbox" id="Blower_Furnance_Cleaning" name="Blower_Furnance_Cleaning" checked={formData.Blower_Furnance_Cleaning} onChange={handleChange}/>
+                        <label htmlFor="Blower_Furnance_Cleaning">Furnance Cleaning (Blower Only)</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Furnance" name="Furnance" checked={formData.Furnance} onChange={handleChange}/>
-                        <label htmlFor="Furnance">Furnace and Air Handler Cleaning</label>
+                        <input type="checkbox" id="Cleaning" name="Whole_Furance_Cleaning" checked={formData.Whole_Furance_Cleaning} onChange={handleChange}/>
+                        <label htmlFor="Cleaning">Whole Furnance Cleaning</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="remediation" name="remediation" checked={formData.remediation} onChange={handleChange}/>
-                        <label htmlFor="redemiation">Mold and Mildew Remediation</label>
+                        <input type="checkbox" id="Furnance" name="AC_Coil_Cleaning" checked={formData.AC_Coil_Cleaning} onChange={handleChange}/>
+                        <label htmlFor="Furnance">AC Coil Cleaning</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="VentCleaning" name="VentCleaning" checked={formData.VentCleaning} onChange={handleChange} />
-                        <label htmlFor="VentCleaning">Dryer Vent Cleaning</label>
+                        <input type="checkbox" id="remediation" name="Duct_Sanitization" checked={formData.Duct_Sanitization} onChange={handleChange}/>
+                        <label htmlFor="redemiation">Duct Sanitization</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="HVAC" name="HVAC" checked={formData.HVAC} onChange={handleChange}/>
-                        <label htmlFor="HVAC">HVAC System Maintenance</label>
+                        <input type="checkbox" id="Humidified_Pad_replacement" name="Humidified_Pad_replacement" checked={formData.Humidified_Pad_replacement} onChange={handleChange} />
+                        <label htmlFor="Humidified_Pad_replacement">Humidified Pad replacement</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="indoor" name="indoor" checked={formData.indoor} onChange={handleChange}/>
-                        <label htmlFor="indoor">Indoor Air Quality Testing</label>
+                        <input type="checkbox" id="Upgrade_furnace_filter" name="Upgrade_furnace_filter" checked={formData.Upgrade_furnace_filter} onChange={handleChange}/>
+                        <label htmlFor="Upgrade_furnace_filter">Upgrade furnace filter</label>
                     </div>
                 </div>
 
