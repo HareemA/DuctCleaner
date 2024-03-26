@@ -473,6 +473,32 @@ p {
   line-height: 26px;
 }
 
+.service-section-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-section-card {
+  display: flex;
+  width: 30%;
+  /* background-color: gray; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* background-color: rgb(197, 193, 193);  */
+  /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
+  height: 250px;
+  border-radius: 15px;
+  text-decoration: none;
+}
 /* FOOTER */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -719,9 +745,8 @@ p {
 }
 
 .services-card {
-  margin-top: 60px;
   display: flex;
-  width: 30%;
+  width: 100%;
   /* background-color: gray; */
   /* margin-left: auto;
   margin-right: auto; */
@@ -760,15 +785,13 @@ p {
   align-items: center;
   justify-content: center;
   width: 70%;
+  margin-top: 40px;
 }
 
-.service-card-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #ccb0b0;
-  width: 40%;
-}
-
+.service-card-outer {
+  width: 30%;
+  height: 450px;
+} 
 
 .servives-heading {
   color: rgb(65, 88, 208);
@@ -779,18 +802,9 @@ p {
   
 }
 
-.services-para-main {
-  width: 30%;
-}
-
 .services-para {
-  color: black;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  align-items: center;
-  padding-right: 14px;
-
+  width: 100%;
+  padding: 30px 0 0 10px;
 }
 
 .service-card-heading {
@@ -901,17 +915,18 @@ p {
   .services-inner-card {
     margin-top: 60px;
     display: flex;
-    width: 60%;
+    width: 80%;
     /* background-color: gray; */
     margin-left: auto;
     margin-right: auto;
     /* background-color: rgb(197, 193, 193);  */
-    box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
+    /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
     height: 350px;
+    gap: 40px;
   }
   
   .services-inner-img {
-    width: 40%;
+    width: 60%;
     height: 100%;
     
   }
@@ -954,6 +969,43 @@ p {
   width: 100%;
   height: 450px;
   position: relative;
+}
+
+.main--image--book{
+  position: relative;
+  background: URL("./Images/appointment.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  overflow:hidden;
+  /* background-attachment: fixed; */
+  /* background-position: top; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.cen-book {
+  margin: 20px;
+  display: flex;
+  font-size: 30px;
+  color: #015395;
+  border: 4px solid #015395;
+  padding: 10px 10px 10px 10px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+   */
 }
 
 .book-heading {
@@ -1277,6 +1329,43 @@ input[type="checkbox"] {
 }
 
 /* Pricing Page*/
+.main--image--prices{
+  position: relative;
+  background: URL("./Images/Price\ \(2\).png") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  overflow:hidden;
+  /* background-attachment: fixed; */
+  /* background-position: top; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.cen-prices {
+  margin: 20px;
+  display: flex;
+  font-size: 30px;
+  color: #FFB61E;
+  border: 4px solid #FFB61E;
+  padding: 10px 10px 10px 10px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+   */
+}
+
 .price-data-main {
   margin-top: 30px;
   display: flex;
@@ -1435,6 +1524,26 @@ input[type="checkbox"] {
   }
 }
 
+@media only screen and (max-width: 931px) {
+  .service-card-conatiner {
+    width: 90%;
+  }
+  .service-card-outer {
+    width: 50%;
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+  .service-card-conatiner {
+    width: 90%;
+  }
+  .service-card-outer {
+    width: 40%;
+    height: 550px;
+  }
+}
+
 @media only screen and (max-width: 324px) {
   .card-main-heading {
     font-size: 40px;
@@ -1443,12 +1552,33 @@ input[type="checkbox"] {
 
 }
 
+@media only screen and (max-width: 505px) {
+  .service-card-outer {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 784px) {
+
+  .service-card-outer {
+    width: 80%;
+    height: 550px;
+  }
+
+  .service-card-heading {
+    margin-top: 40%;
+  }
+}
+
 @media only screen and (max-width: 1005px) {
   .book-heading {
     font-size: 50px;
   }
   
-  .service-inner-card-conatiner {
+  
+  
+  /* .service-inner-card-conatiner {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -1474,10 +1604,10 @@ input[type="checkbox"] {
     margin-top: 60px;
     display: flex;
     width: 70%;
-    /* background-color: gray; */
+    background-color: gray;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: rgb(197, 193, 193);  */
+    background-color: rgb(197, 193, 193); 
     box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
     height: auto
   }
@@ -1489,7 +1619,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
   
-  }
+  } */
 
 }
 
@@ -1501,6 +1631,7 @@ input[type="checkbox"] {
 
 
 }
+
 
 @media only screen and (max-width:841px) {
   .types-images {
@@ -1620,7 +1751,7 @@ input[type="checkbox"] {
 
   .services-para {
     color: black;
-    font-size: 14px;
+    font-size: 15px;
     font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
@@ -1694,13 +1825,12 @@ input[type="checkbox"] {
 
   .services-para {
     color: black;
-    font-size: 10px;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
     padding-right: 20px;
-    margin-top: -10px;
-  
+
   }
   
   .service-heading {

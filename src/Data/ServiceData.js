@@ -31,21 +31,21 @@ const ServiceData = [
         id:4, 
         heading:"Dryer Vent Cleaning",
         img: vent,
-        position: "left",
+        position: "right",
         para: "Some duct cleaning companies also offer dryer vent cleaning services to remove lint, dust, and debris from dryer vents and ductwork. This helps to prevent dryer fires, improve dryer performance, and reduce energy consumption by ensuring proper airflow and ventilation"
     },
     {
         id:5, 
         heading:"HVAC System Maintenance",
         img: Hvac,
-        position: "right",
+        position: "left",
         para: "Duct cleaning companies may provide routine maintenance services to help homeowners and building owners maintain the cleanliness and efficiency of their HVAC systems. This may include inspection, cleaning, lubrication, and adjustment of system components to ensure optimal performance and longevity."
     },
     {
         id:6, 
         heading:"Indoor Air Quality Testing",
         img: air,
-        position: "left",
+        position: "right",
         para: "In addition to cleaning services, duct cleaning companies may offer indoor air quality testing to assess the level of pollutants and contaminants present in the indoor environment. This testing may involve sampling air quality parameters such as particulate matter, volatile organic compounds (VOCs), humidity, and carbon dioxide levels to identify potential health hazards and recommend appropriate remediation measures."
     },
 ]

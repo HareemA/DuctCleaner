@@ -30,11 +30,15 @@ export default function ServicesCard() {
     return (
         <div className="service-card-conatiner">
             {ServicesData.map(data => (
-                <Link className="services-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
-                    
+                <div className="service-card-outer">
+                    <div className="services-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
                         <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
-                    
-                </Link>
+                    </div>
+                    <div className="services-para">
+                        <p>{data.para}</p>
+                    </div>
+                </div>
+                
             ))}
         </div>
     );
