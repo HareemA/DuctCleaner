@@ -135,12 +135,12 @@ p {
   background: URL("../src/Images/happy-fam2.jpeg") no-repeat center;
   background-size: cover;
   height: 500px;
-  overflow:hidden;
   margin-top: 0px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .header--container {
@@ -308,9 +308,10 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* padding-right: 100px;
-  padding-left: 100px; */
+  padding-right: 30px;
+  padding-left: 30px;
   gap: 30px;
+
 }
 
 .card-main-heading {
@@ -345,6 +346,7 @@ p {
   gap: 15px;
   background-color: rgb(248, 244, 244);
   box-shadow: 0 6px 6px 6px rgb(224, 217, 217);
+  
 }
 
 .tools-card:hover {
@@ -359,7 +361,9 @@ p {
 
 .tools-card >h5 {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #015395;
 }
 
 .Tools--heading {
@@ -404,6 +408,7 @@ p {
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .services--section--heading--link {
@@ -757,9 +762,7 @@ p {
   text-decoration: none;
 }
 
-.service-card-.container:hover {
-  box-shadow: 6px 6px 6px 6px gray;
-}
+
 /* .services-img {
   width: 40%;
   height: 100%;
@@ -1388,19 +1391,7 @@ input[type="checkbox"] {
   position: absolute;
   left: 25%;
   top:370%;
-  
-  
-  /* text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
-   */
+
 }
 
 .price-data-main {
@@ -1579,7 +1570,34 @@ input[type="checkbox"] {
     width: 40%;
     height: 550px;
   }
+  .header--container h1 {
+    margin:0;
+    font-size: 40px;
+  }
+  .cen {
+    font-size: 20px;
+  }
+  
+
 }
+@media only screen and (max-width:445px) {
+  .service-card-conatiner {
+    width: 100%;
+  }
+  .service-card-outer {
+    width: 100%;
+    height: 450px;
+  } 
+
+}
+
+@media only screen and (max-width:450px) {
+  .cen-prices {
+    top:310px;
+    font-size: 17px;
+  }
+}
+
 
 @media only screen and (max-width: 324px) {
   .card-main-heading {
@@ -1596,6 +1614,20 @@ input[type="checkbox"] {
   }
 }
 
+@media only screen and (max-width: 709px) {
+  .Tools-main {
+    margin-top: 50px;
+    display: flex;
+    gap : 25px;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media only screen and (max-width: 784px) {
 
   .service-card-outer {
@@ -1606,15 +1638,48 @@ input[type="checkbox"] {
   .service-card-heading {
     margin-top: 40%;
   }
+  .service-card-outer {
+    height: 400px;
+  } 
+
 }
+
+@media only screen and (max-width:725px) {
+  .header--container h1 {
+    margin:0;
+    font-size: 30px;
+  }
+  .cen {
+    font-size: 20px;
+  }
+  .book-card {
+    width: 80%;
+  }
+}
+ @media only screen and (max-width:806px) {
+  .cen-services {
+    width: 80%;
+  
+  }
+ }
 
 @media only screen and (max-width: 1005px) {
   .book-heading {
     font-size: 50px;
   }
+  .cen-services {
+    width: 80%;
+  
+  }
+  .book-card {
+    width: 70%;
+  }
+  .cen-book {
+    width: 60%;
+ }
   
   
-  
+
   /* .service-inner-card-conatiner {
     display: flex;
     flex-direction: column;
@@ -1657,7 +1722,6 @@ input[type="checkbox"] {
     justify-content: center;
   
   } */
-
 }
 
 
@@ -1665,7 +1729,14 @@ input[type="checkbox"] {
   .book-heading {
     font-size: 45px;
   }
-
+  .header--container h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  .cen {
+    font-size: 20px;
+  }
 
 }
 
@@ -1811,6 +1882,13 @@ input[type="checkbox"] {
     /* background-color: rgb(197, 193, 193);  */
     box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
     height: 280px;
+  }
+}
+
+@media only screen and (max-width:684px) {
+  .cen-book {
+    font-size: 20px;
+    width: 60%;
   }
 }
 

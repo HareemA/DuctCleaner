@@ -31,7 +31,7 @@ export default function ServicesCard() {
         <div className="service-card-conatiner">
             {ServicesData.map(data => (
                 <div className="service-card-outer">
-                    <div className="services-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
+                    <div className="services-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat' , backgroundPosition:'center'}}>
                         <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
                     </div>
                     <div className="services-para">
