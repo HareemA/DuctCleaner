@@ -4,6 +4,21 @@ import { Link } from "react-router-dom";
 import Reveal from '../animation/Reveal';
 import ServiceData from '../Data/ServiceData';
 
+export default function Services() {
+  return (
+    <div className='service-section-card-container'>
+        {ServiceData.map(data => (
+          
+              <div className="services-section-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
+                  <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
+              </div>
+          
+        ))}
+    </div>
+    
+  )
+}
+
 // function useOnScreen(refs, rootMargin = "0px") {
 //   const [isIntersecting, setIntersecting] = useState(Array(refs.length).fill(false));
 
@@ -34,20 +49,6 @@ import ServiceData from '../Data/ServiceData';
 //   return isIntersecting;
 // }
 
-export default function Services() {
-  return (
-    <div className='service-section-card-container'>
-        {ServiceData.map(data => (
-          
-              <div className="services-section-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
-                  <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
-              </div>
-          
-        ))}
-    </div>
-    
-  )
-}
   // Create a ref for each item
   // const itemRefs = useRef(ServicesData.map(() => React.createRef()));
   // const isVisibleList = useOnScreen(itemRefs.current);
@@ -79,4 +80,58 @@ export default function Services() {
   //     </div>
   //   </section>
   // );
+
+
+
+
+    // TODO: add animations to services card: code:
+//   import React from 'react';
+// import { Link } from 'react-router-dom';
+// import { motion } from 'framer-motion';
+// import { useInView } from 'react-intersection-observer';
+// import ServiceData from '../Data/ServiceData';
+
+// export default function Services() {
+//   return (
+//     <div className="service-section-card-container">
+//       {ServiceData.map((data) => (
+//         <AnimatedServiceCard key={data.id} data={data} />
+//       ))}
+//     </div>
+//   );
+// }
+
+// function AnimatedServiceCard({ data }) {
+//   const { ref, inView } = useInView({
+//     triggerOnce: false,
+//     threshold: 0.5, // Adjust threshold as needed
+//   });
+
+//   const variants = {
+//     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+//     hidden: { opacity: 0, y: 50 },
+//   };
+
+//   return (
+//     <motion.div
+//       ref={ref}
+//       className="services-section-card"
+//       style={{
+//         backgroundImage: `url(${data.img})`,
+//         backgroundSize: 'cover',
+//         backgroundRepeat: 'no-repeat',
+//         position: 'relative', // Ensure consistent positioning during animation
+//       }}
+//       initial="hidden"
+//       animate={inView ? 'visible' : 'hidden'}
+//       variants={variants}
+//     >
+//       <Link to="/ServicesInner">
+//         <h2 className="service-card-heading">
+//           <span>{data.heading}</span>
+//         </h2>
+//       </Link>
+//     </motion.div>
+//   );
+// }
 
