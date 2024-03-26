@@ -11,7 +11,9 @@ export default function BookPage() {
             <NavBar/>
             <BookHeader/>
             {/* <h1 className="book-heading">Book an Appointment with us</h1> */}
+            <div className="book-card-div-bg">
             <BookCard/>
+            </div>
             <Testimonials/>
             <Footer/>
         </div>

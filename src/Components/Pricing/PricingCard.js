@@ -81,7 +81,7 @@ export default function PriceCard() {
             {isMsgSent && 
                 <div className="message-box">Message Sent Successfully!</div>
             }
-            <div className="book-card">
+            <div className="quote-card">
             <form className="form" onSubmit={sendEmail}>
                 <div className="services-checkbox">
                     <p>What Services would you like know About?</p>

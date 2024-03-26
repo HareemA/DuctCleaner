@@ -215,7 +215,10 @@ p {
   padding-bottom: 20px;
   color: #015395;
   font-family: "Montserrat", sans-serif;
+  font-size: 23px;
 }
+
+
 
 .link-nav:hover {
   color: #dda900;
@@ -968,10 +971,10 @@ p {
 
 
 /* Booking Page */
-.book-header-image {
+.book-image {
   width: 100%;
-  height: 450px;
-  position: relative;
+  height: 400px;
+
 }
 
 .main--image--book{
@@ -986,6 +989,32 @@ p {
   background-size: cover; */
 }
 
+.header--container-book {
+  position: absolute;
+  top: 30%;
+  left:50%;
+  transform: translate(-50%, -50% );
+  text-align: center;
+  color: #EEEEEE;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.header--container-book h1 {
+  margin:0;
+  font-size: 66px;
+}
+
+.header--container-book h1 span {
+  /* border: 6px solid #FFB61E; */
+  padding: 6px 14px;
+  display: inline-block;
+  color: #015395;
+  background-color: #eaf0f4c2;
+  
+}
+
 .cen-book {
   margin: 20px;
   display: flex;
@@ -998,17 +1027,6 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  /* text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
-   */
 }
 
 .book-heading {
@@ -1019,9 +1037,19 @@ p {
   font-weight: 500;
   text-align: center;
 }
+.book-card-div-bg{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.637), rgba(255, 255, 255, 0.5)), url('./Images/commertial.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: -30px; */
+  padding: 40px 0 40px 0;
+  margin-bottom: -50px;
+}
 
 .book-card {
-  margin-top: 30px;
+  margin-top: 250px;
   width: 60%;
   height: auto;
   align-items: center;
@@ -1032,6 +1060,7 @@ p {
   margin-bottom: 30px;
   padding-right: 30px;
   box-shadow: 0 6px 6px 6px #a2c5e2;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .form {
@@ -1441,6 +1470,20 @@ input[type="checkbox"] {
   font-family: "Montserrat", sans-serif;
 }
 
+.quote-card {
+  margin-top: 50px;
+  width: 60%;
+  height: auto;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  border:1px dotted #0C72C3 ;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  box-shadow: 0 6px 6px 6px #a2c5e2;
+  background-color: rgba(255, 255, 255, 0.7);
+}
 .names-quote {
   gap: 10px;
   display: flex;
@@ -1577,6 +1620,10 @@ input[type="checkbox"] {
   .cen {
     font-size: 20px;
   }
+  .header--container-book h1 {
+    margin:0;
+    font-size: 40px;
+  }
   
 
 }
@@ -1649,10 +1696,17 @@ input[type="checkbox"] {
     margin:0;
     font-size: 30px;
   }
+  .header--container-book h1 {
+    margin:0;
+    font-size: 40px;
+  }
   .cen {
     font-size: 20px;
   }
   .book-card {
+    width: 80%;
+  }
+  .quote-card {
     width: 80%;
   }
 }
@@ -1674,10 +1728,15 @@ input[type="checkbox"] {
   .book-card {
     width: 70%;
   }
+  .quote-card {
+    width: 70%;
+  }
   .cen-book {
     width: 60%;
  }
-  
+  .Tools-main{
+    width: 80%;
+  }
   
 
   /* .service-inner-card-conatiner {
@@ -1724,6 +1783,19 @@ input[type="checkbox"] {
   } */
 }
 
+@media only screen and (max-width: 585px) {
+  .service-card-conatiner {
+    margin-bottom: 70px;
+  
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  .service-card-conatiner {
+    margin-bottom: 90px;
+  
+  }
+}
 
 @media only screen and (max-width: 542px) {
   .book-heading {
@@ -1734,12 +1806,45 @@ input[type="checkbox"] {
     margin-right: 20px;
     font-size: 30px;
   }
+  .header--container-book h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+  }
   .cen {
     font-size: 20px;
   }
 
 }
 
+@media only screen and (max-width: 700px) {
+  .book-heading {
+    font-size: 45px;
+  }
+  .header--container h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  .header--container-book h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 32px;
+  }
+  .cen {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 445px) {
+  
+  .header--container-book  {
+    margin-top: 50px;
+  }
+  
+
+}
 
 @media only screen and (max-width:841px) {
   .types-images {
@@ -1839,7 +1944,6 @@ input[type="checkbox"] {
     padding-right: 20px;
   
   }
-  
   .service-inner-card-heading {
     color: #015395;
     font-size: 18px;
@@ -1876,12 +1980,14 @@ input[type="checkbox"] {
     margin-top: 60px;
     display: flex;
     width: 95%;
-    /* background-color: gray; */
     margin-left: auto;
     margin-right: auto;
     /* background-color: rgb(197, 193, 193);  */
     box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
     height: 280px;
+  }
+  .service-card-conatiner {
+    margin-bottom: 120px;
   }
 }
 
@@ -1993,6 +2099,7 @@ input[type="checkbox"] {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
   }
+  
   .services-card {
     margin-top: 60px;
     display: flex;
@@ -2062,10 +2169,6 @@ input[type="checkbox"] {
   .testimonial--section--card {
     margin-right: 55px;
     margin-left: 55px;
-  }
-  .contact--section {
-    margin-right: 35px;
-    margin-left: 35px;
   }
   .services--section--container,
   .portfolio--section--container {
