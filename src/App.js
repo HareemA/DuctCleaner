@@ -6,7 +6,6 @@ import Services from './Components/Services';
 import Tools from './Components/Tools';
 import Footer from './Components/Footer';
 import Testimonials from './Components/Testimonials';
-import {Reveal} from './animation/Reveal';
 
 function App() {
   return (
@@ -24,10 +23,9 @@ function App() {
             </h1>
         </div>
       <Header/>
-      <h1 className="servives-heading">OUR SERVICES</h1>
+      <h1 className='Tools--heading'>SERVICES</h1>
       <Services/>
       <Benifits/>
-      
       <Tools/>
       <Testimonials/>
       <Footer/>
