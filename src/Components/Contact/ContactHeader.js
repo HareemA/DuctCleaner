@@ -15,7 +15,7 @@ export default function ContactHeader() {
                 </div>
             </h1>
         </div>
-            <h1 className="servives-heading">EMAIL US</h1>
+            
         </div>
     )
 }

@@ -1237,12 +1237,18 @@ p {
 }
 .contact--section {
   display: flex;
-  padding: 65px 85px 150px 85px;
+  padding: 65px 85px 30px 85px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 64px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.637), rgba(255, 255, 255, 0.5)), url('./Images/3d-rendering-ventilation-system.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -50px;
 }
 .contact--form--container {
   display: grid;

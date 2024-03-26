@@ -4,6 +4,7 @@ import PricingMain from './PricingMain';
 import PriceCard from './PricingCard';
 import Footer from '../Footer';
 import PriceValues from './PriceValues';
+import Testimonials from '../Testimonials';
 
 export default function PricePage() {
     return (
@@ -13,6 +14,7 @@ export default function PricePage() {
             <PricingMain/>
             <PriceValues/>
             <PriceCard/>
+            <Testimonials/>
             <Footer/>
         </div>
     )
