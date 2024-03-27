@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DuctCleaner/static/css/main.546350c9.css",
-    "main.js": "/DuctCleaner/static/js/main.7996800a.js",
+    "main.css": "/DuctCleaner/static/css/main.2e062bee.css",
+    "main.js": "/DuctCleaner/static/js/main.0a389354.js",
     "static/js/453.003a8735.chunk.js": "/DuctCleaner/static/js/453.003a8735.chunk.js",
     "static/media/3d-rendering-ventilation-system.jpg": "/DuctCleaner/static/media/3d-rendering-ventilation-system.6261c0d7c67bf1f090ae.jpg",
     "static/media/men-working-with-equipment-full-shot.jpg": "/DuctCleaner/static/media/men-working-with-equipment-full-shot.ec5faef97fe2a497a71b.jpg",
@@ -9,25 +9,23 @@
     "static/media/Contact-us.jpg": "/DuctCleaner/static/media/Contact-us.d795755340477545a678.jpg",
     "static/media/office.jpg": "/DuctCleaner/static/media/office.0ff4ae7329b91c9898d4.jpg",
     "static/media/commertial.jpg": "/DuctCleaner/static/media/commertial.70d5cb8d9cd3de09a90a.jpg",
-    "static/media/Mold-Remediation-Services-1.jpg": "/DuctCleaner/static/media/Mold-Remediation-Services-1.fafe1107aa9622663f77.jpg",
     "static/media/happy-fam2.jpeg": "/DuctCleaner/static/media/happy-fam2.ff63a41cf1c529a8bbf9.jpeg",
-    "static/media/air-duct-cleaning.jpg": "/DuctCleaner/static/media/air-duct-cleaning.ddd80efd1c0cc854d153.jpg",
     "static/media/LOGO (4).png": "/DuctCleaner/static/media/LOGO (4).0d219aacc90d865432a4.png",
     "static/media/resedential.jpg": "/DuctCleaner/static/media/resedential.c0a47fbadb1f10c0528c.jpg",
     "static/media/Price.png": "/DuctCleaner/static/media/Price.633df72fd31f098cb8af.png",
+    "static/media/happy.jpg": "/DuctCleaner/static/media/happy.9127f9bc23aedf4eac19.jpg",
     "static/media/duct.jpg": "/DuctCleaner/static/media/duct.436759388de3ab9af1bc.jpg",
-    "static/media/maintenance.jpg": "/DuctCleaner/static/media/maintenance.5f7734efe46488474a97.jpg",
     "static/media/inspection.jpg": "/DuctCleaner/static/media/inspection.b6608e24fd9152349d19.jpg",
     "static/media/appointment.jpg": "/DuctCleaner/static/media/appointment.e2d1c033cc0d6b79346a.jpg",
     "static/media/vacuum (2).png": "/DuctCleaner/static/media/vacuum (2).9950e5763548537e968c.png",
     "static/media/res.jpeg": "/DuctCleaner/static/media/res.e10b9619ef1b707df995.jpeg",
     "index.html": "/DuctCleaner/index.html",
-    "main.546350c9.css.map": "/DuctCleaner/static/css/main.546350c9.css.map",
-    "main.7996800a.js.map": "/DuctCleaner/static/js/main.7996800a.js.map",
+    "main.2e062bee.css.map": "/DuctCleaner/static/css/main.2e062bee.css.map",
+    "main.0a389354.js.map": "/DuctCleaner/static/js/main.0a389354.js.map",
     "453.003a8735.chunk.js.map": "/DuctCleaner/static/js/453.003a8735.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.546350c9.css",
-    "static/js/main.7996800a.js"
+    "static/css/main.2e062bee.css",
+    "static/js/main.0a389354.js"
   ]
 }
