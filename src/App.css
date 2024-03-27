@@ -1672,7 +1672,7 @@ input[type="checkbox"] {
 .promotions--section {
   background-color: rgb(236, 236, 236);
   background-size: cover;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.637), rgba(216, 157, 18, 0.735)), url('./Images/happy-fam.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.637), rgba(16, 93, 181, 0.492)), url('./Images/happy-fam.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
