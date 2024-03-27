@@ -6,7 +6,7 @@ export default function SpecialOffersCards() {
             <div className="offer-card">
                 <div className="round-div">
                     <div>For</div>
-                    <div className="price-font">$299</div>
+                    <div className="price-font">$199</div>
                     <div>No hidden Price</div>
                 </div>
                 <div className="offer-text-div">
@@ -29,7 +29,7 @@ export default function SpecialOffersCards() {
                 <div className="offer-text-div">
                     <div className="package-name">Delux Package</div>
                     <div className="package-offer">What we provide</div>
-                    <div>Unlimited 10 Vents</div>
+                    <div>Unlimited Vents</div>
                     <div>Vents Connected to Furnance (Supply)</div>
                     <div>Vents Connected to Furnance (Return)</div>
                     <div>Sanitize and disinfect the duct system</div>

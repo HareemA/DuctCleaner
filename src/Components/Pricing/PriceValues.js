@@ -43,7 +43,7 @@ export default function PriceValues() {
                     <thead>
                         <tr>
                             <th>Regular Package</th>
-                            <th>$299.0</th>
+                            <th>$199.0</th>
                         </tr>
                     </thead>
                     <tr>
