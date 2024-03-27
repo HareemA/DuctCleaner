@@ -488,8 +488,8 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -1578,6 +1578,7 @@ input[type="checkbox"] {
 .main--image--special-offers{
   position: relative;
   background: URL("../src/Images/happy.jpg") no-repeat center;
+  /* background: URL("../src/Images/promotionsHeader.png") no-repeat center; */
   background-size: cover;
   height: 500px;
   margin-top: 0px;
@@ -1595,6 +1596,8 @@ input[type="checkbox"] {
   justify-content: center;
   gap: 170px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .offer-card {
@@ -1665,6 +1668,30 @@ input[type="checkbox"] {
 .order-link {
   text-decoration: none;
 }
+
+.promotions--section {
+  background-color: rgb(236, 236, 236);
+  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.637), rgba(216, 157, 18, 0.735)), url('./Images/happy-fam.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 50px; 
+}
+
+.promotions--image {
+  background: URL("../src/Images/poster5.png") no-repeat center;
+  width: 1000px; 
+  height: 630px; 
+  margin: 10px; 
+  background-size: cover; 
+  background-position: center; /* Center the background image */
+}
+
 
 
 

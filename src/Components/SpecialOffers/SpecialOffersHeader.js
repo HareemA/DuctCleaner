@@ -45,7 +45,7 @@ export default function SpecialOffersHeader() {
                 </motion.h3> */}
                 <motion.h3
                     className="cen"
-                    animate={pulseAnimation} // Apply the defined animation
+                    animate={pulseAnimation} 
                 >
                     <span>Check out the best discounted deals!</span>
                 </motion.h3>

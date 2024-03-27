@@ -6,6 +6,7 @@ import Services from './Components/Services';
 import Tools from './Components/Tools';
 import Footer from './Components/Footer';
 import Testimonials from './Components/Testimonials';
+import PromotionsPoster from './Components/PromotionsPoster';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Header/>
       <h1 className='Tools--heading'>SERVICES</h1>
       <Services/>
+      <PromotionsPoster/>
       <Benifits/>
       <Tools/>
       <Testimonials/>
