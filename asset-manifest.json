@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/DuctCleaner/static/css/main.2e062bee.css",
-    "main.js": "/DuctCleaner/static/js/main.396f104a.js",
+    "main.css": "/DuctCleaner/static/css/main.b1576b46.css",
+    "main.js": "/DuctCleaner/static/js/main.57a298d0.js",
     "static/js/453.003a8735.chunk.js": "/DuctCleaner/static/js/453.003a8735.chunk.js",
     "static/media/3d-rendering-ventilation-system.jpg": "/DuctCleaner/static/media/3d-rendering-ventilation-system.6261c0d7c67bf1f090ae.jpg",
     "static/media/men-working-with-equipment-full-shot.jpg": "/DuctCleaner/static/media/men-working-with-equipment-full-shot.ec5faef97fe2a497a71b.jpg",
     "static/media/Price (2).png": "/DuctCleaner/static/media/Price (2).d7aa860c559ba4376ae9.png",
     "static/media/Contact-us.jpg": "/DuctCleaner/static/media/Contact-us.d795755340477545a678.jpg",
+    "static/media/poster5.png": "/DuctCleaner/static/media/poster5.5f8288336f24309c7729.png",
     "static/media/office.jpg": "/DuctCleaner/static/media/office.0ff4ae7329b91c9898d4.jpg",
     "static/media/commertial.jpg": "/DuctCleaner/static/media/commertial.70d5cb8d9cd3de09a90a.jpg",
     "static/media/happy-fam2.jpeg": "/DuctCleaner/static/media/happy-fam2.ff63a41cf1c529a8bbf9.jpeg",
+    "static/media/happy-fam.jpg": "/DuctCleaner/static/media/happy-fam.857f2de23ec1a227e716.jpg",
     "static/media/LOGO (4).png": "/DuctCleaner/static/media/LOGO (4).0d219aacc90d865432a4.png",
     "static/media/resedential.jpg": "/DuctCleaner/static/media/resedential.c0a47fbadb1f10c0528c.jpg",
     "static/media/Price.png": "/DuctCleaner/static/media/Price.633df72fd31f098cb8af.png",
@@ -20,12 +22,12 @@
     "static/media/vacuum (2).png": "/DuctCleaner/static/media/vacuum (2).9950e5763548537e968c.png",
     "static/media/res.jpeg": "/DuctCleaner/static/media/res.e10b9619ef1b707df995.jpeg",
     "index.html": "/DuctCleaner/index.html",
-    "main.2e062bee.css.map": "/DuctCleaner/static/css/main.2e062bee.css.map",
-    "main.396f104a.js.map": "/DuctCleaner/static/js/main.396f104a.js.map",
+    "main.b1576b46.css.map": "/DuctCleaner/static/css/main.b1576b46.css.map",
+    "main.57a298d0.js.map": "/DuctCleaner/static/js/main.57a298d0.js.map",
     "453.003a8735.chunk.js.map": "/DuctCleaner/static/js/453.003a8735.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e062bee.css",
-    "static/js/main.396f104a.js"
+    "static/css/main.b1576b46.css",
+    "static/js/main.57a298d0.js"
   ]
 }
