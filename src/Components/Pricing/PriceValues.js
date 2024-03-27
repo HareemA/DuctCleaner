@@ -37,16 +37,60 @@ export default function PriceValues() {
                     </tr>
                     <thead>
                         <tr>
+                            <th colSpan="2">Promotions Offers</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>Regular Package</th>
+                            <th>$299.0</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Upto 10 vents</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Vents Connected to furnace (Supply) </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Complete job for all and main line</td>
+                        <td></td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <th >Delux Package</th>
+                            <th>$399.0</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Unlimited Vents</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>All vents connected to furnace (supply) </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>All vents connected to furnaces (return)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sanitize and disinfect the ducts system</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colSpan="2"><hr/></td>
+                    </tr>
+                    <thead>
+                        <tr>
                             <th colSpan="2">Additional Items</th>
                         </tr>
                     </thead>
                     <tr>
                         <td>Supply and return vents after the first 10 (price per vent)</td>
-                        <td>$10.00</td>
-                    </tr>
-                    <tr>
-                        <td>Furnace Cleaning (blower only)</td>
-                        <td>$59.00</td>
+                        <td>$70.00</td>
                     </tr>
                     <tr>
                         <td>Furnace Cleaning (whole furnace, where available)</td>
@@ -66,7 +110,7 @@ export default function PriceValues() {
                     </tr>
                     <tr>
                         <td>Upgrade furnace filter (where available)</td>
-                        <td>$20.00</td>
+                        <td>$50.00</td>
                     </tr>
                 </tbody>
             </table>

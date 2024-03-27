@@ -12,7 +12,7 @@ export default function ServicesPage() {
         <div className="main">
             <NavBar/>
             <ServicesHeader/>
-            <h3 className="services-h3">We PROVDE SERVICES FOR BOTH YOUR HOMES AND OFFICES</h3>
+            <h3 className="services-h3">WE PROVDE SERVICES FOR BOTH YOUR HOMES AND OFFICES</h3>
             <ServicesTypes/>
             <h3 className="services-h3">KNOW MORE ABOUT ALL THE SERVICES</h3>
             <ServiceCard/>

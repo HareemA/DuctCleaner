@@ -5,7 +5,7 @@ export default function PriceCard() {
     const [ isMsgSent ,SetIsMsgSent] = useState(false);
 
     const [formData , setFormData] = useState({
-        Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
+        Inspection:false , Cleaning:false, Furnance:false,  VentCleaning:false , HVAC:false ,
         indoor:false , none:false , name:"" , email:"" , phone:"" ,
         message:""
     })
@@ -62,7 +62,7 @@ export default function PriceCard() {
                     setTimeout(() => {
                         SetIsMsgSent(false); // Hide the message sent dialog after 3 seconds
                     }, 3000);
-                    setFormData({Inspection:false , Cleaning:false, Furnance:false, remediation:false, VentCleaning:false , HVAC:false ,
+                    setFormData({Inspection:false , Cleaning:false, Furnance:false, VentCleaning:false , HVAC:false ,
                         indoor:false , none:false , name:"" , email:"" , phone:"" ,
                         message:""})
                     
@@ -98,10 +98,6 @@ export default function PriceCard() {
                         <label htmlFor="Furnance">Furnace and Air Handler Cleaning</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="remediation" name="remediation" checked={formData.remediation} onChange={handleChange}/>
-                        <label htmlFor="redemiation">Mold and Mildew Remediation</label>
-                    </div>
-                    <div>
                         <input type="checkbox" id="VentCleaning" name="VentCleaning" checked={formData.VentCleaning} onChange={handleChange} />
                         <label htmlFor="VentCleaning">Dryer Vent Cleaning</label>
                     </div>
@@ -121,18 +117,18 @@ export default function PriceCard() {
 
                 <div className="names-quote">
                     <h2>Name</h2>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange}/>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} required/>
                 </div>
 
                 <div className="names-q">
                     <div className="names-q-inner">
                         <h2>Email</h2>
-                        <input type="text" name="email" value={formData.email} onChange={handleChange}/>
+                        <input type="text" name="email" value={formData.email} onChange={handleChange} required/>
                     </div>
 
                     <div className="names-q-inner">
                         <h2>Phone</h2>
-                        <input type="text" value={formData.phone} name="phone" onChange={handleChange}/>
+                        <input type="text" value={formData.phone} name="phone" onChange={handleChange} required/>
                     </div>
                 </div>
 

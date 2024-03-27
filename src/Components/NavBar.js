@@ -5,7 +5,7 @@ import close from '../Images/close.png';
 import menu from '../Images/menu.png';
 
 export default function NavBar() {
-    const [isSmall, setIsSmall] = useState(window.innerWidth <= 830);
+    const [isSmall, setIsSmall] = useState(window.innerWidth <= 930);
     const [isClicked , setIsClicked] = useState(false);
 
     function handleClicked() {
@@ -14,7 +14,7 @@ export default function NavBar() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmall(window.innerWidth <= 830);
+            setIsSmall(window.innerWidth <= 930);
         };
 
         window.addEventListener("resize", handleResize);
@@ -44,6 +44,7 @@ export default function NavBar() {
                             <div className="dropdown-content">
                                 <h6><Link to='/' className="link-nav">HOME</Link></h6>
                                 <h6><Link to='/Services' className="link-nav">SERVICES</Link></h6>
+                                <h6><Link to='/SpecialOffers' className="link-nav">SPECIAL OFFERS</Link></h6>
                                 <h6><Link to='/Price' className="link-nav">PRICING</Link></h6>
                                 <h6><Link to='/Contact' className="link-nav section--heading">CONTACT</Link></h6>
                                 <h6><Link to='/Book' className="link-nav">BOOK NOW</Link></h6>
@@ -55,6 +56,7 @@ export default function NavBar() {
                     <>
                         <h6><Link to='/' className="link-nav">HOME</Link></h6>
                         <h6><Link to='/Services' className="link-nav">SERVICES</Link></h6>
+                        <h6><Link to='/SpecialOffers' className="link-nav">SPECIAL OFFERS</Link></h6>
                         <h6><Link to='/Price' className="link-nav">PRICING</Link></h6>
                         <h6><Link to='/Contact' className="link-nav section--heading">CONTACT</Link></h6>
                     </>

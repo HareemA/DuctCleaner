@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import ServicesData from "../Data/ServicesData";
 import { Link } from "react-router-dom";
 import Reveal from '../animation/Reveal';
 import ServiceData from '../Data/ServiceData';
@@ -9,7 +8,7 @@ export default function Services() {
     <div className='service-section-card-container'>
         {ServiceData.map(data => (
           
-              <div className="services-section-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat'}}>
+              <div className="services-section-card" to="/ServicesInner" key={data.id} style={{backgroundImage:`url(${data.img})`, backgroundSize:'cover' , backgroundRepeat:'no-repeat', backgroundPosition:'center'}}>
                   <h2 className="service-card-heading"> <span>{data.heading}</span></h2>
               </div>
           

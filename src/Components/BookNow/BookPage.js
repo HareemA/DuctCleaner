@@ -9,9 +9,10 @@ export default function BookPage() {
     return (
         <div>
             <NavBar/>
-            <BookHeader/>
+            
             {/* <h1 className="book-heading">Book an Appointment with us</h1> */}
             <div className="book-card-div-bg">
+            <BookHeader/>
             <BookCard/>
             </div>
             <Testimonials/>

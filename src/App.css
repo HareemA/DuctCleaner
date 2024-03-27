@@ -835,7 +835,7 @@ p {
   color: #015395;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+
   display: flex;
   text-align: center;
   justify-content: center;
@@ -1574,6 +1574,99 @@ input[type="checkbox"] {
   padding: 25px 0; 
 }
 
+/* SPECIAL OFFERS PAGE*/
+.main--image--special-offers{
+  position: relative;
+  background: URL("../src/Images/happy.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 0px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.offer-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 170px;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  width: 350px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 30px;
+  padding: 10px 0px 30px 0px;
+  margin-top: 30px;
+  box-shadow: 0 6px 6px 6px gainsboro;
+}
+
+.round-div {
+  border-radius:  100%;
+  height: 257px;
+  width: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2a74b1;
+  border:10px solid #015395;
+  font-family: "Montserrat", sans-serif;
+  gap: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+.price-font {
+  font-size: 35px;
+}
+
+.offer-text-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.package-name {
+  color: #015395;
+  font-size: 30px;
+}
+
+.package-offer {
+  font-weight: bold;
+}
+
+.order-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: #d5aa1a;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  
+}
+
+.order-link {
+  text-decoration: none;
+}
+
+
 
 /* For Smaller Screens */
 @media only screen and (max-width: 504px) {
@@ -1931,6 +2024,9 @@ input[type="checkbox"] {
     /* background-color: rgb(197, 193, 193);  */
     box-shadow: 0 6px 6px 6px rgb(212, 207, 207);
     height: 350px;
+  }
+  .offer-card-container {
+    gap:50px
   }
 }
 

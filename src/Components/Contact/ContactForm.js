@@ -82,7 +82,7 @@ export default function ContactForm() {
     return (
         <section id="Contact" className="contact--section">
             <div>
-            <h1 className="Tools--heading">EMAIL US</h1>
+                <h1 className="Tools--heading">EMAIL US</h1>
                 <p className="text-lg">
                 GTA Duct Cleaning welcomes messages from customers and potential partners, providing a user-friendly platform for inquiries, feedback, or collaboration proposals, ensuring prompt and personalized responses to all communication channels.
                 </p>
