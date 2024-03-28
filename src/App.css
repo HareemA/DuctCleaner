@@ -1684,14 +1684,13 @@ input[type="checkbox"] {
 }
 
 .promotions--image {
-  background: URL("../src/Images/poster5.png") no-repeat center;
-  width: 1000px; 
-  height: 630px; 
-  margin: 10px; 
-  background-size: cover; 
-  background-position: center; /* Center the background image */
+  position: relative;
+  width: 80%; /* Reduce the width of the component */
+  padding-top: calc(500 / 1000 * 100%); /* Maintain aspect ratio 500px/1000px */
+  background: url("../src/Images/poster5.png") no-repeat center;
+  background-size: cover;
+  margin: 20px; /* Increase the margin around the inner image */
 }
-
 
 
 
