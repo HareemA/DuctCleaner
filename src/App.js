@@ -27,8 +27,9 @@ function App() {
       <h1 className='Tools--heading'>SERVICES</h1>
       <Services/>
       <PromotionsPoster/>
-      <Benifits/>
       <Tools/>
+      <Benifits/>
+      
       <Testimonials/>
       <Footer/>
     </div>

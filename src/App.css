@@ -134,12 +134,12 @@ p {
   position: relative;
   background: URL("../src/Images/happy-fam2.jpeg") no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   margin-top: 0px;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   width: 100%;
 }
 
@@ -264,6 +264,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 50px;
 }
 
 .card {
@@ -497,15 +498,10 @@ p {
 
 .services-section-card {
   display: flex;
-  width: 30%;
-  /* background-color: gray; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* background-color: rgb(197, 193, 193);  */
-  /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
-  height: 250px;
-  border-radius: 15px;
-  text-decoration: none;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 /* FOOTER */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
@@ -712,7 +708,8 @@ p {
 
 .main--image--services{
   position: relative;
-  background: URL("https://iv2b2a.p3cdn1.secureserver.net/wp-content/uploads/2018/12/duct-cleaning-toronto-1.jpg?time=1711155746") no-repeat center;
+  /* background: URL("https://iv2b2a.p3cdn1.secureserver.net/wp-content/uploads/2018/12/duct-cleaning-toronto-1.jpg?time=1711155746") no-repeat center; */
+  background: URL('./Images/men-working-with-equipment-full-shot.jpg') no-repeat center;
   background-size: cover;
   height: 600px;
   overflow:hidden;
@@ -754,15 +751,11 @@ p {
 
 .services-card {
   display: flex;
-  width: 100%;
-  /* background-color: gray; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* background-color: rgb(197, 193, 193);  */
-  /* box-shadow: 0 6px 6px 6px rgb(212, 207, 207); */
-  height: 250px;
-  border-radius: 15px;
   text-decoration: none;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 
@@ -2128,46 +2121,9 @@ input[type="checkbox"] {
     flex-direction: column;
   
   }
-  .service-section-card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .services-section-card {
-    display: flex;
-    width: 30%;
-  }
+
 }
 
-@media only screen and (max-width:845px) {
-  .service-section-card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .services-section-card {
-    display: flex;
-    width: 40%;
-  }
-}
 
 @media only screen and (max-width:476px) {
   .services-inner-para {
@@ -2245,10 +2201,6 @@ input[type="checkbox"] {
 
 @media only screen and (max-width : 443px) {
   
-  .services-section-card {
-    display: flex;
-    width: 85%;
-  }
 }
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 @media only screen and (max-width: 1600px) {
@@ -2305,6 +2257,21 @@ input[type="checkbox"] {
     width: 100%;
   }
   
+}
+
+@media only screen and (max-width:1280px) {
+  .service-card-conatiner,
+  .service-section-card-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .service-card-conatiner,
+  .service-section-card-container {
+    width: 80%;
+    gap: 70px;
+  }
 }
 
 @media only screen and (max-width: 503px) {

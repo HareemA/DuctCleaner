@@ -2,15 +2,16 @@ import inspection from '../Images/inspection.jpg';
 import furnance from '../Images/furnance.jpeg';
 import vent from '../Images/vent.jpeg';
 import office from '../Images/office.jpg';
-import res from '../Images/res.jpeg';
-import special from '../Images/special-offers.jpg';
+import res from '../Images/res.jpg';
+import special from '../Images/special-offer.png';
 const ServiceData = [
     {
         id:1, 
         img: special,
-        heading: "Special Offers",
+        heading: "",
         position: "left",
-        para: "Explore our special offers tailored to meet your needs. From discounted rates to bundled services, we have exclusive deals designed to make your HVAC maintenance more affordable and convenient."
+        para: "Explore our special offers tailored to meet your needs. From discounted rates to bundled services, we have exclusive deals designed to make your HVAC maintenance more affordable and convenient.",
+        url : true
     },
     {
         id:2, 
@@ -40,13 +41,13 @@ const ServiceData = [
         position: "left",
         para: "Prevent dryer fires and improve dryer efficiency with our professional dryer vent cleaning services. Our technicians thoroughly clean dryer vents and ductwork, removing lint and debris to ensure proper airflow and ventilation, reducing the risk of fire hazards and increasing energy efficiency."
     },
-    {
-        id:6, 
-        heading: "Air Duct Inspection",
-        img: inspection,
-        position: "right",
-        para: "Identify and address indoor air quality issues with our comprehensive air duct inspection services. Our certified technicians conduct thorough assessments of your ductwork, identifying potential sources of contamination and recommending tailored solutions to improve indoor air quality and occupant health."
-    },
+    // {
+    //     id:6, 
+    //     heading: "Air Duct Inspection",
+    //     img: inspection,
+    //     position: "right",
+    //     para: "Identify and address indoor air quality issues with our comprehensive air duct inspection services. Our certified technicians conduct thorough assessments of your ductwork, identifying potential sources of contamination and recommending tailored solutions to improve indoor air quality and occupant health."
+    // },
 ];
 
 
