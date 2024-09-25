@@ -8,7 +8,7 @@ import Footer from './Components/Footer';
 import Testimonials from './Components/Testimonials';
 import PromotionsPoster from './Components/PromotionsPoster';
 
-export const App() {
+export const App = () => {
   return (
     <div className='main'>
       <Navbar/>
