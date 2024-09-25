@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {App} from './App';
 import BookPage from './Components/BookNow/BookPage';
 import ServicesPage from './Components/Services/ServicesPage';
 import ContactPage from './Components/Contact/ContactPage';
