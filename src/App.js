@@ -8,7 +8,7 @@ import Footer from './Components/Footer';
 import Testimonials from './Components/Testimonials';
 import PromotionsPoster from './Components/PromotionsPoster';
 
-function App() {
+export const App() {
   return (
     <div className='main'>
       <Navbar/>
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+
